@@ -10,7 +10,7 @@ import Foundation
 
 struct ScannerViewModel {
     
-    let takePhotoButtonTitle = "Take photo"
+    let takePhotoButtonTitle = LocalizedString.takeAPhoto
     
     private let cameraService: CameraService
     

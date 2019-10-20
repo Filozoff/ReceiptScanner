@@ -26,6 +26,9 @@
 		2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF6235A42180010D60F /* ViewStyle.swift */; };
 		2F9F7DFA235A42180010D60F /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF7235A42180010D60F /* ButtonStyle.swift */; };
 		2FAC63F6235CA349002FA800 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */; };
+		2FAC63FB235CC12A002FA800 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC63FA235CC12A002FA800 /* Localizable.strings */; };
+		2FAC63FD235CC15B002FA800 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC63FC235CC15B002FA800 /* Localizable.stringsdict */; };
+		2FAC6403235CCADD002FA800 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC6402235CCADD002FA800 /* LocalizedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		2F9F7DF6235A42180010D60F /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 		2F9F7DF7235A42180010D60F /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		2FAC63FA235CC12A002FA800 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2FAC63FC235CC15B002FA800 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		2FAC6402235CCADD002FA800 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		2F42D9D2235649B5005058EC /* ReceiptScanner */ = {
 			isa = PBXGroup;
 			children = (
+				2FAC6401235CCADD002FA800 /* Generated */,
 				2F42D9F823564A2E005058EC /* Resource */,
 				2F42D9F723564A26005058EC /* Source */,
 				2F42D9FA23564A45005058EC /* Supporting Files */,
@@ -198,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				2F42D9DC235649B5005058EC /* Assets.xcassets */,
+				2FAC63FE235CC165002FA800 /* Localization */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -272,6 +280,23 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
+		2FAC63FE235CC165002FA800 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				2FAC63FA235CC12A002FA800 /* Localizable.strings */,
+				2FAC63FC235CC15B002FA800 /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		2FAC6401235CCADD002FA800 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2FAC6402235CCADD002FA800 /* LocalizedString.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F42D9EF235649B5005058EC /* Build configuration list for PBXNativeTarget "ReceiptScanner" */;
 			buildPhases = (
+				2FAC63FF235CC4C6002FA800 /* Generate localized strings */,
 				2F42D9CC235649B5005058EC /* Sources */,
 				2F42D9CD235649B5005058EC /* Frameworks */,
 				2F42D9CE235649B5005058EC /* Resources */,
@@ -354,6 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F42D9E0235649B5005058EC /* LaunchScreen.storyboard in Resources */,
+				2FAC63FD235CC15B002FA800 /* Localizable.stringsdict in Resources */,
+				2FAC63FB235CC12A002FA800 /* Localizable.strings in Resources */,
 				2F42D9DD235649B5005058EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +394,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FAC63FF235CC4C6002FA800 /* Generate localized strings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate localized strings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftgen config run --config \"../.swiftgen.yml\" \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F42D9CC235649B5005058EC /* Sources */ = {
@@ -388,6 +437,7 @@
 				2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */,
 				2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */,
 				2F02AE6A235B31000072C881 /* Quad.swift in Sources */,
+				2FAC6403235CCADD002FA800 /* LocalizedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
