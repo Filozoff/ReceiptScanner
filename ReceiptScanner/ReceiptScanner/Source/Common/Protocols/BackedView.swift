@@ -18,6 +18,10 @@ protocol BackedViewProvider {
 extension BackedViewProvider where Self: UIViewController {
     
     var backedView: BackedView {
-        return view as! BackedView
+        guard let view = view as? BackedView else {
+            fatalError("Cannot get `backedView` because `view` setted for `\(Self.self)` is not a type of `\(Self.BackedView.self)`.")
+        }
+        
+        return view
     }
 }
