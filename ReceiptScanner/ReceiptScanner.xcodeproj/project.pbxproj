@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		2F02AE49235B2A840072C881 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE48235B2A840072C881 /* Layout.swift */; };
 		2F02AE4B235B2BF60072C881 /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE4A235B2BF60072C881 /* Closure.swift */; };
+		2F02AE51235B30B40072C881 /* CameraServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE4F235B30B40072C881 /* CameraServiceError.swift */; };
+		2F02AE52235B30B40072C881 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE50235B30B40072C881 /* CameraService.swift */; };
+		2F02AE67235B31000072C881 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE62235B31000072C881 /* ScannerView.swift */; };
+		2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE63235B31000072C881 /* VideoPreviewView.swift */; };
+		2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE64235B31000072C881 /* ScannerViewController.swift */; };
+		2F02AE6A235B31000072C881 /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE66235B31000072C881 /* Quad.swift */; };
 		2F42D9D4235649B5005058EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D3235649B5005058EC /* AppDelegate.swift */; };
 		2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D5235649B5005058EC /* SceneDelegate.swift */; };
-		2F42D9D8235649B5005058EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D7235649B5005058EC /* ViewController.swift */; };
 		2F42D9DD235649B5005058EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F42D9DC235649B5005058EC /* Assets.xcassets */; };
 		2F42D9E0235649B5005058EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F42D9DE235649B5005058EC /* LaunchScreen.storyboard */; };
 		2F42D9EB235649B5005058EC /* ReceiptScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9EA235649B5005058EC /* ReceiptScannerTests.swift */; };
@@ -20,6 +25,7 @@
 		2F9F7DF8235A42180010D60F /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF5235A42180010D60F /* Stylable.swift */; };
 		2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF6235A42180010D60F /* ViewStyle.swift */; };
 		2F9F7DFA235A42180010D60F /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF7235A42180010D60F /* ButtonStyle.swift */; };
+		2FAC63F6235CA349002FA800 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,15 @@
 /* Begin PBXFileReference section */
 		2F02AE48235B2A840072C881 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		2F02AE4A235B2BF60072C881 /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
+		2F02AE4F235B30B40072C881 /* CameraServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceError.swift; sourceTree = "<group>"; };
+		2F02AE50235B30B40072C881 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		2F02AE62235B31000072C881 /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerView.swift; path = Scenes/ScannerScene/ScannerView.swift; sourceTree = "<group>"; };
+		2F02AE63235B31000072C881 /* VideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPreviewView.swift; path = Scenes/ScannerScene/VideoPreviewView.swift; sourceTree = "<group>"; };
+		2F02AE64235B31000072C881 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = Scenes/ScannerScene/ScannerViewController.swift; sourceTree = "<group>"; };
+		2F02AE66235B31000072C881 /* Quad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quad.swift; sourceTree = "<group>"; };
 		2F42D9D0235649B5005058EC /* ReceiptScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F42D9D3235649B5005058EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F42D9D5235649B5005058EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F42D9D7235649B5005058EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F42D9DC235649B5005058EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F42D9DF235649B5005058EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F42D9E1235649B5005058EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +61,7 @@
 		2F9F7DF5235A42180010D60F /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
 		2F9F7DF6235A42180010D60F /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 		2F9F7DF7235A42180010D60F /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F02AE4C235B305B0072C881 /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				2F02AE5F235B31000072C881 /* Scanning */,
+			);
+			path = Journey;
+			sourceTree = "<group>";
+		};
+		2F02AE4D235B30B40072C881 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F02AE4E235B30B40072C881 /* Camera */,
+			);
+			name = Services;
+			path = ReceiptScanner/Source/Services;
+			sourceTree = SOURCE_ROOT;
+		};
+		2F02AE4E235B30B40072C881 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2F02AE50235B30B40072C881 /* CameraService.swift */,
+				2F02AE4F235B30B40072C881 /* CameraServiceError.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		2F02AE5F235B31000072C881 /* Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				2F02AE62235B31000072C881 /* ScannerView.swift */,
+				2F02AE64235B31000072C881 /* ScannerViewController.swift */,
+				2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */,
+				2F02AE63235B31000072C881 /* VideoPreviewView.swift */,
+			);
+			path = Scanning;
+			sourceTree = "<group>";
+		};
 		2F02AE6B235B31EB0072C881 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +186,9 @@
 			children = (
 				2F02AE6B235B31EB0072C881 /* Common */,
 				2F9F7DE4235A41350010D60F /* Foundation */,
+				2F02AE4C235B305B0072C881 /* Journey */,
 				2F42D9F923564A36005058EC /* Main */,
+				2F02AE4D235B30B40072C881 /* Services */,
 				2F9F7DEB235A41B10010D60F /* UI */,
 			);
 			path = Source;
@@ -156,7 +207,6 @@
 			children = (
 				2F42D9D3235649B5005058EC /* AppDelegate.swift */,
 				2F42D9D5235649B5005058EC /* SceneDelegate.swift */,
-				2F42D9D7235649B5005058EC /* ViewController.swift */,
 				2F42D9DE235649B5005058EC /* LaunchScreen.storyboard */,
 			);
 			path = Main;
@@ -174,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				2F02AE4A235B2BF60072C881 /* Closure.swift */,
+				2F02AE66235B31000072C881 /* Quad.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -321,16 +372,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F42D9D8235649B5005058EC /* ViewController.swift in Sources */,
 				2F9F7DFA235A42180010D60F /* ButtonStyle.swift in Sources */,
 				2F9F7DEA235A41350010D60F /* BackedView.swift in Sources */,
 				2F42D9D4235649B5005058EC /* AppDelegate.swift in Sources */,
+				2F02AE67235B31000072C881 /* ScannerView.swift in Sources */,
 				2F9F7DF8235A42180010D60F /* Stylable.swift in Sources */,
+				2F02AE51235B30B40072C881 /* CameraServiceError.swift in Sources */,
+				2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */,
+				2FAC63F6235CA349002FA800 /* ScannerViewModel.swift in Sources */,
 				2F02AE49235B2A840072C881 /* Layout.swift in Sources */,
 				2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */,
+				2F02AE52235B30B40072C881 /* CameraService.swift in Sources */,
 				2F02AE4B235B2BF60072C881 /* Closure.swift in Sources */,
 				2F9F7DE9235A41350010D60F /* UIViewExtension.swift in Sources */,
+				2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */,
 				2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */,
+				2F02AE6A235B31000072C881 /* Quad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
