@@ -10,24 +10,24 @@ import AVKit
 import UIKit
 
 class VideoPreviewView: UIView {
-    
-    // MARK: - Properties
-    
-    override class var layerClass: AnyClass {
-        return AVCaptureVideoPreviewLayer.self
-    }
-    
-    private var videoPreviewLayer: AVCaptureVideoPreviewLayer {
-        guard let layer = layer as? AVCaptureVideoPreviewLayer else {
-            fatalError("Provided layer for `\(Self.self)` is not of `\(AVCaptureVideoPreviewLayer.self)` type.")
-        }
-        
-        return layer
-    }
-    
-    // MARK: - Display
-    
-    func displayOutput(from session: AVCaptureSession) {
-        videoPreviewLayer.session = session
-    }
+	
+	// MARK: - Properties
+	
+	override class var layerClass: AnyClass {
+		return AVCaptureVideoPreviewLayer.self
+	}
+	
+	private var videoPreviewLayer: AVCaptureVideoPreviewLayer {
+		guard let layer = layer as? AVCaptureVideoPreviewLayer else {
+			fatalError("Provided layer for `\(Self.self)` is not of `\(AVCaptureVideoPreviewLayer.self)` type.")
+		}
+		
+		return layer
+	}
+	
+	// MARK: - Display
+	
+	func displayOutput(from session: AVCaptureSession) {
+		videoPreviewLayer.session = session
+	}
 }

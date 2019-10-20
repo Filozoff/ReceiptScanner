@@ -9,7 +9,7 @@
 import Foundation
 
 enum CameraServiceError: Error {
-    case cannotAddDeviceInputToSession
-    case cannotAddPhotoOutputToSession
-    case cannotFindVideoDevice
+	case cannotAddDeviceInputToSession
+	case cannotAddPhotoOutputToSession
+	case cannotFindVideoDevice
 }

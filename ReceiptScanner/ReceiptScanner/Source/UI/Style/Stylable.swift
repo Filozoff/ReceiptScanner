@@ -11,8 +11,8 @@ import Foundation
 protocol Stylable { }
 
 extension Stylable {
-    
-    func apply(style: ViewStyle<Self>) {
-        style.style(self)
-    }
+	
+	func apply(style: ViewStyle<Self>) {
+		style.style(self)
+	}
 }

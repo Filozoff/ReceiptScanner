@@ -9,13 +9,13 @@
 import Foundation
 
 struct ViewStyle<T> {
-    
-    let style: ValueClosure<T>
-    
-    func compose(with style: ViewStyle<T>) -> ViewStyle<T> {
-        return ViewStyle<T> {
-            self.style($0)
-            style.style($0)
-        }
-    }
+	
+	let style: ValueClosure<T>
+	
+	func compose(with style: ViewStyle<T>) -> ViewStyle<T> {
+		return ViewStyle<T> {
+			self.style($0)
+			style.style($0)
+		}
+	}
 }
