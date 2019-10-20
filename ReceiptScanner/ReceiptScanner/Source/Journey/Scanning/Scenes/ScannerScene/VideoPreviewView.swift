@@ -18,7 +18,11 @@ class VideoPreviewView: UIView {
     }
     
     private var videoPreviewLayer: AVCaptureVideoPreviewLayer {
-        return layer as! AVCaptureVideoPreviewLayer
+        guard let layer = layer as? AVCaptureVideoPreviewLayer else {
+            fatalError("Provided layer for `\(Self.self)` is not of `\(AVCaptureVideoPreviewLayer.self)` type.")
+        }
+        
+        return layer
     }
     
     // MARK: - Display
