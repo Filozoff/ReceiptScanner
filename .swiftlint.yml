@@ -1,0 +1,101 @@
+# Rule list
+disabled_rules:
+    - trailing_whitespace
+
+opt_in_rules:
+    - closure_end_indentation
+    - closure_spacing
+    - cyclomatic_complexity
+    - empty_count
+    - empty_string
+    - explicit_init
+    - fatal_error_message
+    - file_length
+    - force_cast
+    - force_unwrapping
+    - force_try
+    - function_body_length
+    - function_parameter_count
+    - identifier_name
+    - line_length
+    - multiline_arguments
+    - multiline_function_chains
+    - multiline_literal_brackets
+    - multiline_parameters_brackets
+    - nesting
+    - operator_usage_whitespace
+    - overriden_super_call
+    - private_action
+    - private_outlet
+    - prohibited_super_call
+    - redundant_nil_coalescing
+    - redundant_type_annotations
+    - strict_fileprivate
+    - toggle_bool
+    - trailing_closure
+    - trailing_newline
+    - type_body_length
+    - type_name
+    - unused_declaration
+    - unused_import
+    - vertical_parameter_alignement_on_call
+    - vertical_whitespace_closing_braces
+    - vertical_whitespace_between_cases
+    - xct_specific_matcher
+    - yoda_condition
+
+
+
+# Rules configuration
+cyclomatic_complexity:
+    ignores_case_statements: true
+    error: 5
+
+file_length:
+    warning: 500
+    error: 700
+
+force_cast: warning
+
+force_try: warning
+
+force_unwrapping: warning
+
+function_body_length:
+    warning: 70
+    error: 80
+
+identifier_name:
+    excluded:
+        - id
+    min_length:
+        error: 3
+
+line_length:
+    ignores_comments: true
+    ignores_urls: true
+    warning: 140
+
+nesting:
+    type_level:
+        error: 5
+    statement_level:
+        error: 5
+
+type_body_length:
+    warning: 400
+
+type_name:
+    warning: 50
+
+
+
+# Custom rules
+custom_rules:
+
+    # Force to avoid using `NSLocalizedString` in favor `LocalizedString`.
+    swiftgen_strings:
+        name: "SwiftGen Strings"
+        regex: 'NSLocalizedString'
+        message: "Use LocalizedString.key instead."
+        severity: error
