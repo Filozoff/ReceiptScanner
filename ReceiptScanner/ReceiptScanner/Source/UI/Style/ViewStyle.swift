@@ -6,7 +6,7 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
-import Foundation
+import KWFoundation
 
 struct ViewStyle<T> {
 	

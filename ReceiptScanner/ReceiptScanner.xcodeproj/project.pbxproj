@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2F02AE49235B2A840072C881 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE48235B2A840072C881 /* Layout.swift */; };
-		2F02AE4B235B2BF60072C881 /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE4A235B2BF60072C881 /* Closure.swift */; };
 		2F02AE51235B30B40072C881 /* CameraServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE4F235B30B40072C881 /* CameraServiceError.swift */; };
 		2F02AE52235B30B40072C881 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE50235B30B40072C881 /* CameraService.swift */; };
 		2F02AE67235B31000072C881 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE62235B31000072C881 /* ScannerView.swift */; };
 		2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE63235B31000072C881 /* VideoPreviewView.swift */; };
 		2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE64235B31000072C881 /* ScannerViewController.swift */; };
-		2F02AE6A235B31000072C881 /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE66235B31000072C881 /* Quad.swift */; };
 		2F42D9D4235649B5005058EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D3235649B5005058EC /* AppDelegate.swift */; };
 		2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D5235649B5005058EC /* SceneDelegate.swift */; };
 		2F42D9DD235649B5005058EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F42D9DC235649B5005058EC /* Assets.xcassets */; };
@@ -29,6 +27,8 @@
 		2FAC63FB235CC12A002FA800 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC63FA235CC12A002FA800 /* Localizable.strings */; };
 		2FAC63FD235CC15B002FA800 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2FAC63FC235CC15B002FA800 /* Localizable.stringsdict */; };
 		2FAC6403235CCADD002FA800 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC6402235CCADD002FA800 /* LocalizedString.swift */; };
+		2FCACB092360BDFD00980027 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; };
+		2FCACB0A2360BDFD00980027 /* KWFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,15 +41,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2FCACB0B2360BDFD00980027 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2FCACB0A2360BDFD00980027 /* KWFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2F02AE48235B2A840072C881 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
-		2F02AE4A235B2BF60072C881 /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		2F02AE4F235B30B40072C881 /* CameraServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceError.swift; sourceTree = "<group>"; };
 		2F02AE50235B30B40072C881 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		2F02AE62235B31000072C881 /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerView.swift; path = Scenes/ScannerScene/ScannerView.swift; sourceTree = "<group>"; };
 		2F02AE63235B31000072C881 /* VideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPreviewView.swift; path = Scenes/ScannerScene/VideoPreviewView.swift; sourceTree = "<group>"; };
 		2F02AE64235B31000072C881 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = Scenes/ScannerScene/ScannerViewController.swift; sourceTree = "<group>"; };
-		2F02AE66235B31000072C881 /* Quad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quad.swift; sourceTree = "<group>"; };
 		2F42D9D0235649B5005058EC /* ReceiptScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F42D9D3235649B5005058EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F42D9D5235649B5005058EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +80,7 @@
 		2FAC63FA235CC12A002FA800 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2FAC63FC235CC15B002FA800 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		2FAC6402235CCADD002FA800 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		2FCACB082360BDFD00980027 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCACB092360BDFD00980027 /* KWFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +154,7 @@
 				2F42D9D2235649B5005058EC /* ReceiptScanner */,
 				2F42D9E9235649B5005058EC /* ReceiptScannerTests */,
 				2F42D9D1235649B5005058EC /* Products */,
+				2FCACB072360BDFD00980027 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				2F02AE6B235B31EB0072C881 /* Common */,
-				2F9F7DE4235A41350010D60F /* Foundation */,
 				2F02AE4C235B305B0072C881 /* Journey */,
 				2F42D9F923564A36005058EC /* Main */,
 				2F02AE4D235B30B40072C881 /* Services */,
@@ -226,15 +240,6 @@
 				2F42D9E1235649B5005058EC /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2F9F7DE4235A41350010D60F /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				2F02AE4A235B2BF60072C881 /* Closure.swift */,
-				2F02AE66235B31000072C881 /* Quad.swift */,
-			);
-			path = Foundation;
 			sourceTree = "<group>";
 		};
 		2F9F7DE5235A41350010D60F /* Extensions */ = {
@@ -297,6 +302,14 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		2FCACB072360BDFD00980027 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FCACB082360BDFD00980027 /* KWFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,6 +322,7 @@
 				2F42D9CD235649B5005058EC /* Frameworks */,
 				2F42D9CE235649B5005058EC /* Resources */,
 				2FAC6404235CD246002FA800 /* Lint files */,
+				2FCACB0B2360BDFD00980027 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -451,11 +465,9 @@
 				2F02AE49235B2A840072C881 /* Layout.swift in Sources */,
 				2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */,
 				2F02AE52235B30B40072C881 /* CameraService.swift in Sources */,
-				2F02AE4B235B2BF60072C881 /* Closure.swift in Sources */,
 				2F9F7DE9235A41350010D60F /* UIViewExtension.swift in Sources */,
 				2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */,
 				2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */,
-				2F02AE6A235B31000072C881 /* Quad.swift in Sources */,
 				2FAC6403235CCADD002FA800 /* LocalizedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

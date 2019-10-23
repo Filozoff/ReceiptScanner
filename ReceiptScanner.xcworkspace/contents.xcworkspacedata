@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KWFoundation/KWFoundation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ReceiptScanner/ReceiptScanner.xcodeproj">
    </FileRef>
 </Workspace>
