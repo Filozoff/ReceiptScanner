@@ -29,6 +29,8 @@
 		2FAC6403235CCADD002FA800 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC6402235CCADD002FA800 /* LocalizedString.swift */; };
 		2FCACB092360BDFD00980027 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; };
 		2FCACB0A2360BDFD00980027 /* KWFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FCACB132360DA9100980027 /* VideoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB122360DA9100980027 /* VideoOutput.swift */; };
+		2FCACB152360DC5800980027 /* CameraServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB142360DC5800980027 /* CameraServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		2FAC63FC235CC15B002FA800 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		2FAC6402235CCADD002FA800 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		2FCACB082360BDFD00980027 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FCACB122360DA9100980027 /* VideoOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOutput.swift; sourceTree = "<group>"; };
+		2FCACB142360DC5800980027 /* CameraServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 			children = (
 				2F02AE50235B30B40072C881 /* CameraService.swift */,
 				2F02AE4F235B30B40072C881 /* CameraServiceError.swift */,
+				2FCACB142360DC5800980027 /* CameraServiceImpl.swift */,
+				2FCACB122360DA9100980027 /* VideoOutput.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -465,10 +471,12 @@
 				2F02AE49235B2A840072C881 /* Layout.swift in Sources */,
 				2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */,
 				2F02AE52235B30B40072C881 /* CameraService.swift in Sources */,
+				2FCACB152360DC5800980027 /* CameraServiceImpl.swift in Sources */,
 				2F9F7DE9235A41350010D60F /* UIViewExtension.swift in Sources */,
 				2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */,
 				2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */,
 				2FAC6403235CCADD002FA800 /* LocalizedString.swift in Sources */,
+				2FCACB132360DA9100980027 /* VideoOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
