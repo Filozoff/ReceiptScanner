@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Point {
+public struct Point: Equatable {
 
 	public var x: Double
 	public var y: Double

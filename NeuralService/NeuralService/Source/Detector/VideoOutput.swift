@@ -9,13 +9,13 @@
 import CoreVideo
 import ImageIO
 
-class VideoOutput {
+public class VideoOutput {
 
-	let pixelBuffer: CVImageBuffer
-	let orientation: CGImagePropertyOrientation
-	let intrinsics: CFTypeRef?
+	public let pixelBuffer: CVImageBuffer
+	public let orientation: CGImagePropertyOrientation
+	public let intrinsics: CFTypeRef?
 
-	init(pixelBuffer: CVImageBuffer, orientation: CGImagePropertyOrientation, intrinsics: CFTypeRef?) {
+	public init(pixelBuffer: CVImageBuffer, orientation: CGImagePropertyOrientation, intrinsics: CFTypeRef?) {
 		self.pixelBuffer = pixelBuffer
 		self.orientation = orientation
 		self.intrinsics = intrinsics

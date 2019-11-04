@@ -6,23 +6,28 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
-import Foundation
+import AVKit
+import NeuralService
 
-struct ScannerViewModel {
-	
+class ScannerViewModel {
+
+	lazy var cameraService: CameraService = {
+		return CameraServiceImpl(captureSession: captureSession)
+	}()
+	let rectangleDetector = DetectorFactory.makeRectangleDetector()
 	let takePhotoButtonTitle = LocalizedString.takeAPhoto
+
+	private let captureSession = AVCaptureSession()
 	
-	private let cameraService: CameraService
-	
-	init(cameraService: CameraService = CameraServiceImpl()) {
-		self.cameraService = cameraService
+	init() {
+
 	}
 	
 	func startCapturing(on view: VideoPreviewView) {
 		do {
 			try cameraService.setupSession()
-			view.displayOutput(from: cameraService.captureSession)
-			cameraService.captureSession.startRunning()
+			view.displayOutput(from: captureSession)
+			captureSession.startRunning()
 		} catch {
 			// TODO: Present an error to a user.
 			print(error.localizedDescription)
@@ -30,6 +35,26 @@ struct ScannerViewModel {
 	}
 	
 	func stopCapturing() {
-		cameraService.captureSession.stopRunning()
+		captureSession.stopRunning()
+	}
+
+	func observe(completion: @escaping ValueClosure<Quad>) {
+		cameraService.onOutputCaptured = { [weak self] (output) in
+			guard let self = self else { return }
+
+			self.rectangleDetector.detect(from: output) { (result) in
+				switch result {
+				case .failure(let error):
+					// TODO: Handle failure
+					print(error.localizedDescription)
+					
+				case .success(let quad):
+					DispatchQueue.main.async {
+//						print("view model: \(quad)")
+						completion(quad)
+					}
+				}
+			}
+		}
 	}
 }

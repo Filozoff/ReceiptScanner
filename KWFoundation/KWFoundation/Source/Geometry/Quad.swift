@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Quad {
+public struct Quad: Equatable {
 	
 	public var bottomLeft: Point
 	public var bottomRight: Point

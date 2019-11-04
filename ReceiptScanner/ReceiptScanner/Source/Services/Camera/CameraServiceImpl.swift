@@ -7,16 +7,22 @@
 //
 
 import AVKit
-import KWFoundation
+import NeuralService
 
 class CameraServiceImpl: NSObject, CameraService {
 
 	// MARK: - Properties
 
-	let captureSession = AVCaptureSession()
 	var onOutputCaptured: ValueClosure<VideoOutput>?
 
+	private let captureSession: AVCaptureSession
 	private let outputQueue = DispatchQueue(label: "camera.output")
+
+	// MARK: - Initialization
+
+	init(captureSession: AVCaptureSession) {
+		self.captureSession = captureSession
+	}
 
 	// MARK: - Session
 

@@ -13,6 +13,7 @@ class ScannerView: UIView {
 	
 	// MARK: - Properties
 	
+	let quadOverlayView = QuadOverlayView()
 	let takePictureButton = UIButton(type: .system)
 	let videoPreview = VideoPreviewView()
 	
@@ -24,6 +25,8 @@ class ScannerView: UIView {
 		backgroundColor = .black
 		addSubviewWithoutAutoresizingMask(videoPreview)
 		
+		addSubviewWithoutAutoresizingMask(quadOverlayView)
+
 		takePictureButton.apply(style: .mainAction)
 		addSubviewWithoutAutoresizingMask(takePictureButton)
 		
@@ -46,6 +49,13 @@ class ScannerView: UIView {
 			videoPreview.bottomAnchor.constraint(equalTo: bottomAnchor),
 			videoPreview.centerXAnchor.constraint(equalTo: centerXAnchor),
 			videoPreview.heightAnchor.constraint(equalTo: videoPreview.widthAnchor, multiplier: ratio)
+		])
+
+		NSLayoutConstraint.activate([
+			quadOverlayView.topAnchor.constraint(equalTo: videoPreview.topAnchor),
+			quadOverlayView.leadingAnchor.constraint(equalTo: videoPreview.leadingAnchor),
+			quadOverlayView.bottomAnchor.constraint(equalTo: videoPreview.bottomAnchor),
+			quadOverlayView.trailingAnchor.constraint(equalTo: videoPreview.trailingAnchor)
 		])
 		
 		NSLayoutConstraint.activate([

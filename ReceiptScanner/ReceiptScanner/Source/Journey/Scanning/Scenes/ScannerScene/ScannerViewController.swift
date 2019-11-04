@@ -13,8 +13,12 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 	typealias BackedView = ScannerView
 	
 	// MARK: - Properties
+
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+		return .portrait
+	}
 	
-	private let viewModel: ScannerViewModel
+	private var viewModel: ScannerViewModel
 	
 	// MARK: - Initialization
 	
@@ -43,6 +47,10 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 		super.viewDidAppear(animated)
 		
 		viewModel.startCapturing(on: backedView.videoPreview)
+		viewModel.observe { [weak self] (quad) in
+			guard let self = self else { return }
+			self.backedView.quadOverlayView.draw(quad: quad)
+		}
 	}
 	
 	override func viewDidDisappear(_ animated: Bool) {

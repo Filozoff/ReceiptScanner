@@ -13,11 +13,15 @@
 		2F02AE67235B31000072C881 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE62235B31000072C881 /* ScannerView.swift */; };
 		2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE63235B31000072C881 /* VideoPreviewView.swift */; };
 		2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE64235B31000072C881 /* ScannerViewController.swift */; };
+		2F1B7FAF23635ABD00B574EE /* QuadOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B7FAE23635ABD00B574EE /* QuadOverlayView.swift */; };
+		2F1B7FB12363656A00B574EE /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B7FB02363656A00B574EE /* CGPointExtension.swift */; };
 		2F42D9D4235649B5005058EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D3235649B5005058EC /* AppDelegate.swift */; };
 		2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D5235649B5005058EC /* SceneDelegate.swift */; };
 		2F42D9DD235649B5005058EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F42D9DC235649B5005058EC /* Assets.xcassets */; };
 		2F42D9E0235649B5005058EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F42D9DE235649B5005058EC /* LaunchScreen.storyboard */; };
-		2F42D9EB235649B5005058EC /* ReceiptScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9EA235649B5005058EC /* ReceiptScannerTests.swift */; };
+		2F4EB4FE2370BDC800B8E48A /* ReceiptScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EB4FD2370BDC800B8E48A /* ReceiptScannerTests.swift */; };
+		2F61965F2370ACA7007165C9 /* NeuralService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965E2370ACA7007165C9 /* NeuralService.framework */; };
+		2F6196602370ACA7007165C9 /* NeuralService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965E2370ACA7007165C9 /* NeuralService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F9F7DE9235A41350010D60F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DE6235A41350010D60F /* UIViewExtension.swift */; };
 		2F9F7DEA235A41350010D60F /* BackedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DE8235A41350010D60F /* BackedView.swift */; };
 		2F9F7DF8235A42180010D60F /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF5235A42180010D60F /* Stylable.swift */; };
@@ -29,12 +33,11 @@
 		2FAC6403235CCADD002FA800 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC6402235CCADD002FA800 /* LocalizedString.swift */; };
 		2FCACB092360BDFD00980027 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; };
 		2FCACB0A2360BDFD00980027 /* KWFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FCACB132360DA9100980027 /* VideoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB122360DA9100980027 /* VideoOutput.swift */; };
 		2FCACB152360DC5800980027 /* CameraServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB142360DC5800980027 /* CameraServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F42D9E7235649B5005058EC /* PBXContainerItemProxy */ = {
+		2F61967C2370B81F007165C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2F42D9C8235649B5005058EC /* Project object */;
 			proxyType = 1;
@@ -51,6 +54,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2FCACB0A2360BDFD00980027 /* KWFoundation.framework in Embed Frameworks */,
+				2F6196602370ACA7007165C9 /* NeuralService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,15 +68,18 @@
 		2F02AE62235B31000072C881 /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerView.swift; path = Scenes/ScannerScene/ScannerView.swift; sourceTree = "<group>"; };
 		2F02AE63235B31000072C881 /* VideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPreviewView.swift; path = Scenes/ScannerScene/VideoPreviewView.swift; sourceTree = "<group>"; };
 		2F02AE64235B31000072C881 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = Scenes/ScannerScene/ScannerViewController.swift; sourceTree = "<group>"; };
+		2F1B7FAE23635ABD00B574EE /* QuadOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadOverlayView.swift; sourceTree = "<group>"; };
+		2F1B7FB02363656A00B574EE /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		2F42D9D0235649B5005058EC /* ReceiptScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F42D9D3235649B5005058EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F42D9D5235649B5005058EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2F42D9DC235649B5005058EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F42D9DF235649B5005058EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F42D9E1235649B5005058EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F42D9E6235649B5005058EC /* ReceiptScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F42D9EA235649B5005058EC /* ReceiptScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerTests.swift; sourceTree = "<group>"; };
-		2F42D9EC235649B5005058EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4EB4FD2370BDC800B8E48A /* ReceiptScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerTests.swift; sourceTree = "<group>"; };
+		2F61965E2370ACA7007165C9 /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6196772370B81F007165C9 /* ReceiptScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F61967B2370B81F007165C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9F7DE6235A41350010D60F /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2F9F7DE8235A41350010D60F /* BackedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackedView.swift; sourceTree = "<group>"; };
 		2F9F7DF5235A42180010D60F /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
@@ -83,7 +90,6 @@
 		2FAC63FC235CC15B002FA800 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		2FAC6402235CCADD002FA800 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		2FCACB082360BDFD00980027 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FCACB122360DA9100980027 /* VideoOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOutput.swift; sourceTree = "<group>"; };
 		2FCACB142360DC5800980027 /* CameraServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,10 +99,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FCACB092360BDFD00980027 /* KWFoundation.framework in Frameworks */,
+				2F61965F2370ACA7007165C9 /* NeuralService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F42D9E3235649B5005058EC /* Frameworks */ = {
+		2F6196742370B81F007165C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -129,7 +136,6 @@
 				2F02AE50235B30B40072C881 /* CameraService.swift */,
 				2F02AE4F235B30B40072C881 /* CameraServiceError.swift */,
 				2FCACB142360DC5800980027 /* CameraServiceImpl.swift */,
-				2FCACB122360DA9100980027 /* VideoOutput.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -137,6 +143,7 @@
 		2F02AE5F235B31000072C881 /* Scanning */ = {
 			isa = PBXGroup;
 			children = (
+				2F1B7FAE23635ABD00B574EE /* QuadOverlayView.swift */,
 				2F02AE62235B31000072C881 /* ScannerView.swift */,
 				2F02AE64235B31000072C881 /* ScannerViewController.swift */,
 				2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */,
@@ -158,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				2F42D9D2235649B5005058EC /* ReceiptScanner */,
-				2F42D9E9235649B5005058EC /* ReceiptScannerTests */,
+				2F6196782370B81F007165C9 /* ReceiptScannerTests */,
 				2F42D9D1235649B5005058EC /* Products */,
 				2FCACB072360BDFD00980027 /* Frameworks */,
 			);
@@ -168,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				2F42D9D0235649B5005058EC /* ReceiptScanner.app */,
-				2F42D9E6235649B5005058EC /* ReceiptScannerTests.xctest */,
+				2F6196772370B81F007165C9 /* ReceiptScannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,31 +189,6 @@
 				2F42D9FA23564A45005058EC /* Supporting Files */,
 			);
 			path = ReceiptScanner;
-			sourceTree = "<group>";
-		};
-		2F42D9E9235649B5005058EC /* ReceiptScannerTests */ = {
-			isa = PBXGroup;
-			children = (
-				2F42D9F6235649E1005058EC /* Supporting Files */,
-				2F42D9F5235649D0005058EC /* Tests */,
-			);
-			path = ReceiptScannerTests;
-			sourceTree = "<group>";
-		};
-		2F42D9F5235649D0005058EC /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				2F42D9EA235649B5005058EC /* ReceiptScannerTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		2F42D9F6235649E1005058EC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F42D9EC235649B5005058EC /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2F42D9F723564A26005058EC /* Source */ = {
@@ -248,9 +230,43 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2F4EB4FA2370B83D00B8E48A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F61967B2370B81F007165C9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F4EB4FB2370BDA100B8E48A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EB4FC2370BDA900B8E48A /* Tests */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2F4EB4FC2370BDA900B8E48A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EB4FD2370BDC800B8E48A /* ReceiptScannerTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2F6196782370B81F007165C9 /* ReceiptScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EB4FB2370BDA100B8E48A /* Source */,
+				2F4EB4FA2370B83D00B8E48A /* Supporting Files */,
+			);
+			path = ReceiptScannerTests;
+			sourceTree = "<group>";
+		};
 		2F9F7DE5235A41350010D60F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2F1B7FB02363656A00B574EE /* CGPointExtension.swift */,
 				2F9F7DE6235A41350010D60F /* UIViewExtension.swift */,
 			);
 			path = Extensions;
@@ -311,6 +327,7 @@
 		2FCACB072360BDFD00980027 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F61965E2370ACA7007165C9 /* NeuralService.framework */,
 				2FCACB082360BDFD00980027 /* KWFoundation.framework */,
 			);
 			name = Frameworks;
@@ -339,22 +356,22 @@
 			productReference = 2F42D9D0235649B5005058EC /* ReceiptScanner.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F42D9E5235649B5005058EC /* ReceiptScannerTests */ = {
+		2F6196762370B81F007165C9 /* ReceiptScannerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F42D9F2235649B5005058EC /* Build configuration list for PBXNativeTarget "ReceiptScannerTests" */;
+			buildConfigurationList = 2F61967E2370B81F007165C9 /* Build configuration list for PBXNativeTarget "ReceiptScannerTests" */;
 			buildPhases = (
-				2F42D9E2235649B5005058EC /* Sources */,
-				2F42D9E3235649B5005058EC /* Frameworks */,
-				2F42D9E4235649B5005058EC /* Resources */,
+				2F6196732370B81F007165C9 /* Sources */,
+				2F6196742370B81F007165C9 /* Frameworks */,
+				2F6196752370B81F007165C9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F42D9E8235649B5005058EC /* PBXTargetDependency */,
+				2F61967D2370B81F007165C9 /* PBXTargetDependency */,
 			);
 			name = ReceiptScannerTests;
 			productName = ReceiptScannerTests;
-			productReference = 2F42D9E6235649B5005058EC /* ReceiptScannerTests.xctest */;
+			productReference = 2F6196772370B81F007165C9 /* ReceiptScannerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -363,15 +380,16 @@
 		2F42D9C8235649B5005058EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Kamil Wyszomierski";
 				TargetAttributes = {
 					2F42D9CF235649B5005058EC = {
 						CreatedOnToolsVersion = 11.1;
 					};
-					2F42D9E5235649B5005058EC = {
-						CreatedOnToolsVersion = 11.1;
+					2F6196762370B81F007165C9 = {
+						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 						TestTargetID = 2F42D9CF235649B5005058EC;
 					};
 				};
@@ -390,7 +408,7 @@
 			projectRoot = "";
 			targets = (
 				2F42D9CF235649B5005058EC /* ReceiptScanner */,
-				2F42D9E5235649B5005058EC /* ReceiptScannerTests */,
+				2F6196762370B81F007165C9 /* ReceiptScannerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -407,7 +425,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F42D9E4235649B5005058EC /* Resources */ = {
+		2F6196752370B81F007165C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -461,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9F7DFA235A42180010D60F /* ButtonStyle.swift in Sources */,
+				2F1B7FB12363656A00B574EE /* CGPointExtension.swift in Sources */,
 				2F9F7DEA235A41350010D60F /* BackedView.swift in Sources */,
 				2F42D9D4235649B5005058EC /* AppDelegate.swift in Sources */,
 				2F02AE67235B31000072C881 /* ScannerView.swift in Sources */,
@@ -475,26 +494,26 @@
 				2F9F7DE9235A41350010D60F /* UIViewExtension.swift in Sources */,
 				2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */,
 				2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */,
+				2F1B7FAF23635ABD00B574EE /* QuadOverlayView.swift in Sources */,
 				2FAC6403235CCADD002FA800 /* LocalizedString.swift in Sources */,
-				2FCACB132360DA9100980027 /* VideoOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F42D9E2235649B5005058EC /* Sources */ = {
+		2F6196732370B81F007165C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F42D9EB235649B5005058EC /* ReceiptScannerTests.swift in Sources */,
+				2F4EB4FE2370BDC800B8E48A /* ReceiptScannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F42D9E8235649B5005058EC /* PBXTargetDependency */ = {
+		2F61967D2370B81F007165C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2F42D9CF235649B5005058EC /* ReceiptScanner */;
-			targetProxy = 2F42D9E7235649B5005058EC /* PBXContainerItemProxy */;
+			targetProxy = 2F61967C2370B81F007165C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -662,15 +681,15 @@
 			};
 			name = Release;
 		};
-		2F42D9F3235649B5005058EC /* Debug */ = {
+		2F61967F2370B81F007165C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
 				INFOPLIST_FILE = "ReceiptScannerTests/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -678,21 +697,22 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.ReceiptScannerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReceiptScanner.app/ReceiptScanner";
 			};
 			name = Debug;
 		};
-		2F42D9F4235649B5005058EC /* Release */ = {
+		2F6196802370B81F007165C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
 				INFOPLIST_FILE = "ReceiptScannerTests/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,11 +747,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F42D9F2235649B5005058EC /* Build configuration list for PBXNativeTarget "ReceiptScannerTests" */ = {
+		2F61967E2370B81F007165C9 /* Build configuration list for PBXNativeTarget "ReceiptScannerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F42D9F3235649B5005058EC /* Debug */,
-				2F42D9F4235649B5005058EC /* Release */,
+				2F61967F2370B81F007165C9 /* Debug */,
+				2F6196802370B81F007165C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

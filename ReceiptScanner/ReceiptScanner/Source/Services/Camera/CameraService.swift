@@ -6,12 +6,10 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
-import AVKit
-import KWFoundation
+import NeuralService
 
 protocol CameraService {
 	
-	var captureSession: AVCaptureSession { get }
 	var onOutputCaptured: ValueClosure<VideoOutput>? { get set }
 	
 	func setupSession() throws
