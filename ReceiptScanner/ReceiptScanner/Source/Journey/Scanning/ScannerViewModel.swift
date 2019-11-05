@@ -19,14 +19,12 @@ class ScannerViewModel {
 
 	private let captureSession = AVCaptureSession()
 	
-	init() {
-
-	}
+	init() { }
 	
-	func startCapturing(on view: VideoPreviewView) {
+	func startCapturing(setup: ValueClosure<AVCaptureSession>) {
 		do {
 			try cameraService.setupSession()
-			view.displayOutput(from: captureSession)
+			setup(captureSession)
 			captureSession.startRunning()
 		} catch {
 			// TODO: Present an error to a user.
