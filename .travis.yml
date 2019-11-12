@@ -1,0 +1,11 @@
+env:
+    - PLATFORM="iOS Simulator,OS=13.2,name=iPhone 11"
+language: objective-c
+osx_image: xcode11.2
+before_script:
+    - set -o pipefail && brew install swiftlint
+    - set -o pipefail && brew install swiftgen
+script:
+
+    # Building and testing
+    - set -o pipefail && xcodebuild -workspace ReceiptScanner.xcworkspace -scheme ReceiptScanner -destination "platform=$PLATFORM" build test | xcpretty
