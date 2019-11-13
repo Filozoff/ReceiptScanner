@@ -26,7 +26,32 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2FCACADE2360BAB000980027"
+            BuildableName = "KWFoundation.framework"
+            BlueprintName = "KWFoundation"
+            ReferencedContainer = "container:../KWFoundation/KWFoundation.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2F6196372370AB6E007165C9"
+            BuildableName = "NeuralService.framework"
+            BlueprintName = "NeuralService"
+            ReferencedContainer = "container:../NeuralService/NeuralService.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2F42D9CF235649B5005058EC"
+            BuildableName = "ReceiptScanner.app"
+            BlueprintName = "ReceiptScanner"
+            ReferencedContainer = "container:ReceiptScanner.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
