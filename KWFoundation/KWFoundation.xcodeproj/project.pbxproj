@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F4B6CA1237DE2820005F838 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B6CA0237DE2820005F838 /* Bindable.swift */; };
+		2F81BCEC2381D67300CCC605 /* BindableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81BCEB2381D67300CCC605 /* BindableTests.swift */; };
 		2FCACAE92360BAB000980027 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACADF2360BAB000980027 /* KWFoundation.framework */; };
 		2FCACAF02360BAB100980027 /* KWFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCACAE22360BAB000980027 /* KWFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FCACB032360BD8D00980027 /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB012360BD8C00980027 /* Quad.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		2F4B6CA0237DE2820005F838 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		2F81BCEB2381D67300CCC605 /* BindableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTests.swift; sourceTree = "<group>"; };
 		2FCACADF2360BAB000980027 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCACAE22360BAB000980027 /* KWFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWFoundation.h; sourceTree = "<group>"; };
 		2FCACAE32360BAB000980027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +58,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F81BCE92381D63100CCC605 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2F81BCED2381D69A00CCC605 /* Mocks */,
+				2F81BCEA2381D64100CCC605 /* Tests */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2F81BCEA2381D64100CCC605 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2F81BCEB2381D67300CCC605 /* BindableTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2F81BCED2381D69A00CCC605 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		2FCACAD52360BAB000980027 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +112,7 @@
 		2FCACAEC2360BAB000980027 /* KWFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				2F81BCE92381D63100CCC605 /* Source */,
 				2FCACAF92360BABA00980027 /* Supporting Files */,
 			);
 			path = KWFoundationTests;
@@ -208,6 +235,7 @@
 					};
 					2FCACAE72360BAB000980027 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -263,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F81BCEC2381D67300CCC605 /* BindableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
 				INFOPLIST_FILE = "KWFoundationTests/Supporting Files/Info.plist";
@@ -463,6 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.KWFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
 				INFOPLIST_FILE = "KWFoundationTests/Supporting Files/Info.plist";
