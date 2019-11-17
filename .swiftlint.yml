@@ -68,6 +68,8 @@ function_body_length:
 identifier_name:
     excluded:
         - id
+        - x
+        - y
     min_length:
         error: 3
 
