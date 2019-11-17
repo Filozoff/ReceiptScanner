@@ -25,8 +25,8 @@ import Foundation
 
 	public struct Observer {
 
-		fileprivate var onCurrent: ValueClosure<T>?
-		fileprivate var value: T {
+		var onCurrent: ValueClosure<T>?
+		var value: T {
 			didSet {
 				onCurrent?(value)
 			}

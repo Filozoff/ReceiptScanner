@@ -42,7 +42,12 @@ class RectangleDetector: RectangleDetecting {
 		}
 	}
 
-	private func handleRectangleRequest(_ request: VNRequest, error: Error?, orientation: CGImagePropertyOrientation, completion: @escaping ValueClosure<Result<[Quad], Error>>) {
+	private func handleRectangleRequest(
+		_ request: VNRequest,
+		error: Error?,
+		orientation: CGImagePropertyOrientation,
+		completion: @escaping ValueClosure<Result<[Quad], Error>>
+	) {
 		if let error = error {
 			completion(.failure(error))
 			return
@@ -54,9 +59,7 @@ class RectangleDetector: RectangleDetecting {
 			return
 		}
 
-		DispatchQueue.main.async {
-			let quads = observations.map { Quad(observation: $0, orientation: orientation) }
-			completion(.success(quads))
-		}
+		let quads = observations.map { Quad(observation: $0, orientation: orientation) }
+		completion(.success(quads))
 	}
 }

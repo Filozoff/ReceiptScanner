@@ -225,6 +225,7 @@
 			buildConfigurationList = 2F61964C2370AB6E007165C9 /* Build configuration list for PBXNativeTarget "NeuralService" */;
 			buildPhases = (
 				2F6196332370AB6E007165C9 /* Headers */,
+				2F81BCE62381C9B500CCC605 /* Lint files */,
 				2F6196342370AB6E007165C9 /* Sources */,
 				2F6196352370AB6E007165C9 /* Frameworks */,
 				2F6196362370AB6E007165C9 /* Resources */,
@@ -312,6 +313,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F81BCE62381C9B500CCC605 /* Lint files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Lint files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint --config \"../.swiftlint.yml\" \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F6196342370AB6E007165C9 /* Sources */ = {

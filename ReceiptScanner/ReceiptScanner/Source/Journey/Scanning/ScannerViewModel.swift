@@ -18,27 +18,25 @@ class ScannerViewModel {
 	private lazy var cameraService: CameraService = {
 		return CameraServiceImpl(captureSession: captureSession)
 	}()
-	private let captureSession = AVCaptureSession()
+
+	private let captureSession: AVCaptureSession
 	private let rectangleDetector = DetectorFactory.makeRectangleDetector()
 	
-	init() { }
-	
-	func startCapturing(setup: ValueClosure<AVCaptureSession>) {
+	init(captureSession: AVCaptureSession = AVCaptureSession()) {
+		self.captureSession = captureSession
+	}
+
+	func setup(sessionClosure: ValueClosure<AVCaptureSession>) {
 		do {
 			try cameraService.setupSession()
-			setup(captureSession)
-			captureSession.startRunning()
 		} catch {
 			// TODO: Present an error to a user.
 			print(error.localizedDescription)
 		}
 	}
-	
-	func stopCapturing() {
-		captureSession.stopRunning()
-	}
 
 	func observe() {
+		captureSession.startRunning()
 		cameraService.onOutputCaptured = { [weak self] (output) in
 			guard let self = self else { return }
 
@@ -55,5 +53,9 @@ class ScannerViewModel {
 				}
 			}
 		}
+	}
+	
+	func stopObserving() {
+		captureSession.stopRunning()
 	}
 }
