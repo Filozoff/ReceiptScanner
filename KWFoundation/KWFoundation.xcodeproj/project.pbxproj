@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4B6CA1237DE2820005F838 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B6CA0237DE2820005F838 /* Bindable.swift */; };
 		2FCACAE92360BAB000980027 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACADF2360BAB000980027 /* KWFoundation.framework */; };
 		2FCACAF02360BAB100980027 /* KWFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCACAE22360BAB000980027 /* KWFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FCACB032360BD8D00980027 /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB012360BD8C00980027 /* Quad.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F4B6CA0237DE2820005F838 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		2FCACADF2360BAB000980027 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCACAE22360BAB000980027 /* KWFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWFoundation.h; sourceTree = "<group>"; };
 		2FCACAE32360BAB000980027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		2FCACB062360BDD700980027 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2F4B6CA0237DE2820005F838 /* Bindable.swift */,
 				2FCACB022360BD8C00980027 /* Closure.swift */,
 			);
 			path = Common;
@@ -252,6 +255,7 @@
 				2FCACB032360BD8D00980027 /* Quad.swift in Sources */,
 				2FCACB042360BD8D00980027 /* Closure.swift in Sources */,
 				2FCACB0E2360BED900980027 /* Point.swift in Sources */,
+				2F4B6CA1237DE2820005F838 /* Bindable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

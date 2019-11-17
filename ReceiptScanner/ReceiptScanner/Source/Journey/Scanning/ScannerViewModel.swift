@@ -11,13 +11,15 @@ import NeuralService
 
 class ScannerViewModel {
 
-	lazy var cameraService: CameraService = {
-		return CameraServiceImpl(captureSession: captureSession)
-	}()
-	let rectangleDetector = DetectorFactory.makeRectangleDetector()
+	@Bindable var quads = [Quad]()
+
 	let takePhotoButtonTitle = LocalizedString.takeAPhoto
 
+	private lazy var cameraService: CameraService = {
+		return CameraServiceImpl(captureSession: captureSession)
+	}()
 	private let captureSession = AVCaptureSession()
+	private let rectangleDetector = DetectorFactory.makeRectangleDetector()
 	
 	init() { }
 	
@@ -36,7 +38,7 @@ class ScannerViewModel {
 		captureSession.stopRunning()
 	}
 
-	func observe(completion: @escaping ValueClosure<Quad>) {
+	func observe() {
 		cameraService.onOutputCaptured = { [weak self] (output) in
 			guard let self = self else { return }
 
@@ -46,10 +48,9 @@ class ScannerViewModel {
 					// TODO: Handle failure
 					print(error.localizedDescription)
 					
-				case .success(let quad):
+				case .success(let quads):
 					DispatchQueue.main.async {
-//						print("view model: \(quad)")
-						completion(quad)
+						self.quads = quads
 					}
 				}
 			}

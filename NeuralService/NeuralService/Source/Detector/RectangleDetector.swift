@@ -14,7 +14,7 @@ class RectangleDetector: RectangleDetecting {
 
 	init() { }
 
-	func detect(from videoOutput: VideoOutput, completion: @escaping ValueClosure<Result<Quad, Error>>) {
+	func detect(from videoOutput: VideoOutput, completion: @escaping ValueClosure<Result<[Quad], Error>>) {
 		var requestOptions: [VNImageOption: Any] = [:]
 		if let videoIntrinsics = videoOutput.intrinsics {
 			requestOptions = [.cameraIntrinsics: videoIntrinsics]
@@ -42,7 +42,7 @@ class RectangleDetector: RectangleDetecting {
 		}
 	}
 
-	private func handleRectangleRequest(_ request: VNRequest, error: Error?, orientation: CGImagePropertyOrientation, completion: @escaping ValueClosure<Result<Quad, Error>>) {
+	private func handleRectangleRequest(_ request: VNRequest, error: Error?, orientation: CGImagePropertyOrientation, completion: @escaping ValueClosure<Result<[Quad], Error>>) {
 		if let error = error {
 			completion(.failure(error))
 			return
@@ -54,13 +54,9 @@ class RectangleDetector: RectangleDetecting {
 			return
 		}
 
-		guard let observation = observations.first else {
-			return
-		}
-
 		DispatchQueue.main.async {
-			let quad = Quad(observation: observation, orientation: orientation)
-			completion(.success(quad))
+			let quads = observations.map { Quad(observation: $0, orientation: orientation) }
+			completion(.success(quads))
 		}
 	}
 }

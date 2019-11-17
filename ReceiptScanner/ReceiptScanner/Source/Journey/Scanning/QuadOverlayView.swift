@@ -80,11 +80,8 @@ class QuadOverlayView: UIView {
 		let path = UIBezierPath()
 		path.move(to: topLeftPoint)
 		path.addLine(to: topRightPoint)
-		path.addArc(withCenter: topRightPoint, radius: 10.0, startAngle: 0, endAngle: 360, clockwise: true)
 		path.addLine(to: bottomRightPoint)
-		path.addArc(withCenter: bottomRightPoint, radius: 20.0, startAngle: 0, endAngle: 360, clockwise: true)
 		path.addLine(to: bottomLeftPoint)
-		path.addArc(withCenter: bottomLeftPoint, radius: 30.0, startAngle: 0, endAngle: 360, clockwise: true)
 		path.close()
 		shapeLayer.path = path.cgPath
 

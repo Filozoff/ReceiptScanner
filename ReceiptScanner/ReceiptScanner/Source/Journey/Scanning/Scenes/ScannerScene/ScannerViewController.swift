@@ -49,10 +49,13 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 		viewModel.startCapturing { [weak self] (session) in
 			self?.backedView.videoPreview.displayOutput(from: session)
 		}
-		viewModel.observe { [weak self] (quad) in
+
+		viewModel.$quads.onCurrent { [weak self] (value) in
 			guard let self = self else { return }
-			self.backedView.quadOverlayView.draw(quad: quad)
+			self.backedView.quadOverlayView.draw(quad: value.first)
 		}
+
+		viewModel.observe()
 	}
 	
 	override func viewDidDisappear(_ animated: Bool) {

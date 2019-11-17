@@ -10,5 +10,5 @@ import Foundation
 
 public protocol RectangleDetecting {
 
-	func detect(from videoOutput: VideoOutput, completion: @escaping ValueClosure<Result<Quad, Error>>)
+	func detect(from videoOutput: VideoOutput, completion: @escaping ValueClosure<Result<[Quad], Error>>)
 }
