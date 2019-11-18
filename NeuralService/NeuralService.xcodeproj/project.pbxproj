@@ -19,6 +19,7 @@
 		2F61966E2370AEC8007165C9 /* VideoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61966D2370AEC7007165C9 /* VideoOutput.swift */; };
 		2F6196702370B039007165C9 /* RectangleDetecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61966F2370B039007165C9 /* RectangleDetecting.swift */; };
 		2F6196722370B46E007165C9 /* DetectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196712370B46E007165C9 /* DetectorFactory.swift */; };
+		2F81BCF52383249600CCC605 /* RectangleDetectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81BCF42383249600CCC605 /* RectangleDetectorError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		2F61966D2370AEC7007165C9 /* VideoOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoOutput.swift; sourceTree = "<group>"; };
 		2F61966F2370B039007165C9 /* RectangleDetecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetecting.swift; sourceTree = "<group>"; };
 		2F6196712370B46E007165C9 /* DetectorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectorFactory.swift; sourceTree = "<group>"; };
+		2F81BCF42383249600CCC605 /* RectangleDetectorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetectorError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 			children = (
 				2F61966F2370B039007165C9 /* RectangleDetecting.swift */,
 				2F61966B2370AE5F007165C9 /* RectangleDetector.swift */,
+				2F81BCF42383249600CCC605 /* RectangleDetectorError.swift */,
 			);
 			path = RectangleDetector;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				2F6196702370B039007165C9 /* RectangleDetecting.swift in Sources */,
 				2F6196642370ACFA007165C9 /* QuadExtension.swift in Sources */,
 				2F6196632370ACFA007165C9 /* PointExtension.swift in Sources */,
+				2F81BCF52383249600CCC605 /* RectangleDetectorError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
