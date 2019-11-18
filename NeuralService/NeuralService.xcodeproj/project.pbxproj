@@ -19,7 +19,9 @@
 		2F61966E2370AEC8007165C9 /* VideoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61966D2370AEC7007165C9 /* VideoOutput.swift */; };
 		2F6196702370B039007165C9 /* RectangleDetecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61966F2370B039007165C9 /* RectangleDetecting.swift */; };
 		2F6196722370B46E007165C9 /* DetectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196712370B46E007165C9 /* DetectorFactory.swift */; };
+		2F81BCF32383208300CCC605 /* RectangleDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81BCF22383208300CCC605 /* RectangleDetectorTests.swift */; };
 		2F81BCF52383249600CCC605 /* RectangleDetectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81BCF42383249600CCC605 /* RectangleDetectorError.swift */; };
+		2F81BCF823832BD100CCC605 /* Receipts.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F81BCF723832BD100CCC605 /* Receipts.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +63,9 @@
 		2F61966D2370AEC7007165C9 /* VideoOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoOutput.swift; sourceTree = "<group>"; };
 		2F61966F2370B039007165C9 /* RectangleDetecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetecting.swift; sourceTree = "<group>"; };
 		2F6196712370B46E007165C9 /* DetectorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectorFactory.swift; sourceTree = "<group>"; };
+		2F81BCF22383208300CCC605 /* RectangleDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetectorTests.swift; sourceTree = "<group>"; };
 		2F81BCF42383249600CCC605 /* RectangleDetectorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetectorError.swift; sourceTree = "<group>"; };
+		2F81BCF723832BD100CCC605 /* Receipts.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Receipts.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		2F6196452370AB6E007165C9 /* NeuralServiceTests */ = {
 			isa = PBXGroup;
 			children = (
+				2F81BCF623832BA000CCC605 /* Resource */,
 				2F6196532370ABA8007165C9 /* Source */,
 				2F6196522370AB7E007165C9 /* Supporting Files */,
 			);
@@ -234,6 +239,22 @@
 			path = RectangleDetector;
 			sourceTree = "<group>";
 		};
+		2F81BCF12383206B00CCC605 /* RectangleDetector */ = {
+			isa = PBXGroup;
+			children = (
+				2F81BCF22383208300CCC605 /* RectangleDetectorTests.swift */,
+			);
+			path = RectangleDetector;
+			sourceTree = "<group>";
+		};
+		2F81BCF623832BA000CCC605 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2F81BCF723832BD100CCC605 /* Receipts.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -337,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F81BCF823832BD100CCC605 /* Receipts.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +406,7 @@
 			files = (
 				2F61966A2370ADEB007165C9 /* QuadTests.swift in Sources */,
 				2F6196692370ADEB007165C9 /* PointTests.swift in Sources */,
+				2F81BCF32383208300CCC605 /* RectangleDetectorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
