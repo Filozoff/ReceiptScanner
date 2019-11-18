@@ -190,9 +190,8 @@
 		2F6196652370AD18007165C9 /* Detector */ = {
 			isa = PBXGroup;
 			children = (
-				2F61966F2370B039007165C9 /* RectangleDetecting.swift */,
-				2F61966B2370AE5F007165C9 /* RectangleDetector.swift */,
 				2F61966D2370AEC7007165C9 /* VideoOutput.swift */,
+				2F81BCF02383204800CCC605 /* RectangleDetector */,
 			);
 			path = Detector;
 			sourceTree = "<group>";
@@ -200,10 +199,36 @@
 		2F6196662370AD5F007165C9 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2F81BCEE23831FDF00CCC605 /* Common */,
+				2F81BCEF2383203600CCC605 /* Detector */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2F81BCEE23831FDF00CCC605 /* Common */ = {
+			isa = PBXGroup;
+			children = (
 				2F6196672370ADEB007165C9 /* PointTests.swift */,
 				2F6196682370ADEB007165C9 /* QuadTests.swift */,
 			);
-			path = Tests;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2F81BCEF2383203600CCC605 /* Detector */ = {
+			isa = PBXGroup;
+			children = (
+				2F81BCF12383206B00CCC605 /* RectangleDetector */,
+			);
+			path = Detector;
+			sourceTree = "<group>";
+		};
+		2F81BCF02383204800CCC605 /* RectangleDetector */ = {
+			isa = PBXGroup;
+			children = (
+				2F61966F2370B039007165C9 /* RectangleDetecting.swift */,
+				2F61966B2370AE5F007165C9 /* RectangleDetector.swift */,
+			);
+			path = RectangleDetector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
