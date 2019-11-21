@@ -1,5 +1,5 @@
 env:
-    - PLATFORM="iOS Simulator,OS=13.2,name=iPhone 11"
+    - PLATFORM="iOS Simulator,OS=13.2.2,name=iPhone 11"
 language: objective-c
 osx_image: xcode11.2
 before_script:
