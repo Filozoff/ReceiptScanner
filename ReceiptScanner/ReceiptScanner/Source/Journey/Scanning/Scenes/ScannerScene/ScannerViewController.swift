@@ -11,7 +11,7 @@ import UIKit
 
 class ScannerViewController: UIViewController, BackedViewProvider {
 	
-	typealias BackedView = ScannerView
+	typealias View = ScannerView
 	
 	// MARK: - Properties
 
