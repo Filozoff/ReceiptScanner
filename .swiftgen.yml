@@ -1,7 +1,7 @@
 strings:
-    inputs: ReceiptScanner/ReceiptScanner/Resource/Localization/Localizable.strings
+    inputs: Presentation/Presentation/Resource/Localization/Localizable.strings
     outputs:
         templateName: structured-swift4
-        output: ReceiptScanner/ReceiptScanner/Generated/LocalizedString.swift
+        output: Presentation/Presentation/Generated/LocalizedString.swift
         params:
             enumName: LocalizedString

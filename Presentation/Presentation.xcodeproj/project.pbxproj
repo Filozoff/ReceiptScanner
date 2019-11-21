@@ -10,6 +10,9 @@
 		2F7C26312386F35400E37119 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7C26272386F35400E37119 /* Presentation.framework */; };
 		2F7C26382386F35400E37119 /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7C262A2386F35400E37119 /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FBD03582386FCC200EC64B8 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBD03572386FCC200EC64B8 /* KWFoundation.framework */; };
+		2FBD03652386FD6300EC64B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03612386FD6300EC64B8 /* Localizable.strings */; };
+		2FBD03662386FD6300EC64B8 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */; };
+		2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBD03642386FD6300EC64B8 /* LocalizedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		2F7C26302386F35400E37119 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7C26372386F35400E37119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FBD03572386FCC200EC64B8 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBD03612386FD6300EC64B8 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		2FBD03642386FD6300EC64B8 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,8 @@
 		2F7C26292386F35400E37119 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				2FBD03632386FD6300EC64B8 /* Generated */,
+				2FBD035F2386FD6300EC64B8 /* Resource */,
 				2F7C26412386F37700E37119 /* Source */,
 				2F7C26422386F38000E37119 /* Supporting Files */,
 			);
@@ -143,6 +151,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2FBD035F2386FD6300EC64B8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2FBD03602386FD6300EC64B8 /* Localization */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2FBD03602386FD6300EC64B8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				2FBD03612386FD6300EC64B8 /* Localizable.strings */,
+				2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		2FBD03632386FD6300EC64B8 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2FBD03642386FD6300EC64B8 /* LocalizedString.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -162,6 +195,7 @@
 			buildConfigurationList = 2F7C263B2386F35400E37119 /* Build configuration list for PBXNativeTarget "Presentation" */;
 			buildPhases = (
 				2F7C26222386F35400E37119 /* Headers */,
+				2FBD03682386FD8900EC64B8 /* Generate localized strings */,
 				2F7C26232386F35400E37119 /* Sources */,
 				2F7C26242386F35400E37119 /* Frameworks */,
 				2F7C26252386F35400E37119 /* Resources */,
@@ -235,6 +269,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBD03652386FD6300EC64B8 /* Localizable.strings in Resources */,
+				2FBD03662386FD6300EC64B8 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,11 +283,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FBD03682386FD8900EC64B8 /* Generate localized strings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate localized strings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftgen config run --config \"../.swiftgen.yml\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F7C26232386F35400E37119 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +502,7 @@
 		2F7C263F2386F35400E37119 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
 				INFOPLIST_FILE = "PresentationTests/Supporting Files/Info.plist";
@@ -462,6 +521,7 @@
 		2F7C26402386F35400E37119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
 				INFOPLIST_FILE = "PresentationTests/Supporting Files/Info.plist";

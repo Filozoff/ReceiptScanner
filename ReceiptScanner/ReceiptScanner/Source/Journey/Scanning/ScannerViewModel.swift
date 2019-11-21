@@ -13,7 +13,8 @@ class ScannerViewModel {
 
 	@Bindable var quads = [Quad]()
 
-	let takePhotoButtonTitle = LocalizedString.takeAPhoto
+	// TODO:
+	let takePhotoButtonTitle = ""
 
 	private lazy var cameraService: CameraService = {
 		return CameraServiceImpl(captureSession: captureSession)
