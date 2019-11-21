@@ -10,7 +10,6 @@
 		2F6196422370AB6E007165C9 /* NeuralService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6196382370AB6E007165C9 /* NeuralService.framework */; };
 		2F6196492370AB6E007165C9 /* NeuralService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F61963B2370AB6E007165C9 /* NeuralService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F61965B2370AC92007165C9 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965A2370AC92007165C9 /* KWFoundation.framework */; };
-		2F61965C2370AC92007165C9 /* KWFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965A2370AC92007165C9 /* KWFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F6196632370ACFA007165C9 /* PointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196612370ACFA007165C9 /* PointExtension.swift */; };
 		2F6196642370ACFA007165C9 /* QuadExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196622370ACFA007165C9 /* QuadExtension.swift */; };
 		2F6196692370ADEB007165C9 /* PointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196672370ADEB007165C9 /* PointTests.swift */; };
@@ -33,20 +32,6 @@
 			remoteInfo = NeuralService;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2F61965D2370AC92007165C9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2F61965C2370AC92007165C9 /* KWFoundation.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F6196382370AB6E007165C9 /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -278,7 +263,6 @@
 				2F6196342370AB6E007165C9 /* Sources */,
 				2F6196352370AB6E007165C9 /* Frameworks */,
 				2F6196362370AB6E007165C9 /* Resources */,
-				2F61965D2370AC92007165C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
