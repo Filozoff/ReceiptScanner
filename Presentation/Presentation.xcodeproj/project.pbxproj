@@ -196,6 +196,7 @@
 			buildPhases = (
 				2F7C26222386F35400E37119 /* Headers */,
 				2FBD03682386FD8900EC64B8 /* Generate localized strings */,
+				2FBD03692387005100EC64B8 /* Lint files */,
 				2F7C26232386F35400E37119 /* Sources */,
 				2F7C26242386F35400E37119 /* Frameworks */,
 				2F7C26252386F35400E37119 /* Resources */,
@@ -301,6 +302,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "swiftgen config run --config \"../.swiftgen.yml\"\n";
+		};
+		2FBD03692387005100EC64B8 /* Lint files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Lint files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint --config \"../.swiftlint.yml\" \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
