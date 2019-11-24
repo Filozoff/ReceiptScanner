@@ -25,3 +25,15 @@ extension BackedViewProvider where Self: UIViewController {
         return view
     }
 }
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+extension BackedViewProvider where Self: UIViewControllerRepresentable {
+
+	typealias UIViewControllerType = Self
+
+	func makeUIViewController(context: UIViewControllerRepresentableContext<Self>) -> Self { return self }
+	func updateUIViewController(_ uiViewController: Self, context: UIViewControllerRepresentableContext<Self>) { }
+}
+#endif

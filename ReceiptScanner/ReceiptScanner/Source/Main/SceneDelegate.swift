@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		guard let windowScene = scene as? UIWindowScene else { return }
 		let startWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
 		startWindow.windowScene = windowScene
-		startWindow.rootViewController = ScannerViewController()
+		startWindow.rootViewController = ReceiptListViewController(viewModel: ReceiptListViewModel())
 		startWindow.makeKeyAndVisible()
 		window = startWindow
 	}
