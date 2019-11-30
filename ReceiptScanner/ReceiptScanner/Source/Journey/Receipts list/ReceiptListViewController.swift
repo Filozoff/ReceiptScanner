@@ -12,6 +12,7 @@ final class ReceiptListViewController: UIViewController, BackedViewProvider {
 
 	typealias View = ReceiptListView
 
+	private let cellIdentifier = "\(UICollectionViewCell.self)"
 	private var viewModel: ReceiptListViewModel
 
 	init(viewModel: ReceiptListViewModel) {
@@ -30,10 +31,22 @@ final class ReceiptListViewController: UIViewController, BackedViewProvider {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		backedView.titleLabel.text = viewModel.title
-		backedView.firstHeader.text = "h1"
-		backedView.secondaryHeader.text = "h2"
+		backedView.collectionView.dataSource = self
+		backedView.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
     }
+}
+
+extension ReceiptListViewController: UICollectionViewDataSource {
+
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return 21
+	}
+
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
+		cell.contentView.backgroundColor = .red
+		return cell
+	}
 }
 
 #if canImport(SwiftUI) && DEBUG

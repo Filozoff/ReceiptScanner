@@ -11,25 +11,19 @@ import UIKit
 
 class ReceiptListView: UIView {
 
-	let titleLabel = makeTitleLabel()
-	let firstHeader = UILabel {
-		$0.adjustsFontForContentSizeCategory = true
-		$0.text = ""
-	}
-	
-	let secondaryHeader: UILabel = build {
-		$0.textColor = .red
-		$0.font = UIFont.systemFont(ofSize: 10)
-	}
+	let addButton = CircleButton(type: .system)
+	let collectionView = UICollectionView(frame: .zero, collectionViewLayout: makeLayout())
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 
 		setupView()
 
-		addSubviewWithoutAutoresizingMask(titleLabel)
-		addSubviewWithoutAutoresizingMask(firstHeader)
-		addSubviewWithoutAutoresizingMask(secondaryHeader)
+		setupCollectionView()
+		addSubviewWithoutAutoresizingMask(collectionView)
+
+		setupAddButton()
+		addSubviewWithoutAutoresizingMask(addButton)
 
 		setNeedsUpdateConstraints()
 	}
@@ -38,27 +32,17 @@ class ReceiptListView: UIView {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	func setupView() {
-		backgroundColor = .systemBackground
-	}
-
 	override func updateConstraints() {
 		NSLayoutConstraint.activate([
-			titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-			titleLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
-			titleLabel.widthAnchor.constraint(equalTo: readableContentGuide.widthAnchor)
+			collectionView.topAnchor.constraint(equalTo: topAnchor),
+			collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+			collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+			collectionView.trailingAnchor.constraint(equalTo: trailingAnchor)
 		])
 
 		NSLayoutConstraint.activate([
-			firstHeader.topAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 2.0),
-			firstHeader.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
-			firstHeader.widthAnchor.constraint(equalTo: readableContentGuide.widthAnchor)
-		])
-
-		NSLayoutConstraint.activate([
-			secondaryHeader.topAnchor.constraint(equalToSystemSpacingBelow: firstHeader.bottomAnchor, multiplier: 1.0),
-			secondaryHeader.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
-			secondaryHeader.widthAnchor.constraint(equalTo: readableContentGuide.widthAnchor)
+			addButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -Layout.Length.medium),
+			addButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor)
 		])
 
 		super.updateConstraints()
@@ -67,25 +51,47 @@ class ReceiptListView: UIView {
 
 extension ReceiptListView {
 
-	private static func makeTitleLabel() -> UILabel {
-		let label = UILabel()
-		label.adjustsFontForContentSizeCategory = true
-		label.font = UIFont.preferredFont(forTextStyle: .title1)
-		label.numberOfLines = 0
-		return label
+	private func setupAddButton() {
+		addButton.apply(style: .add)
 	}
-}
 
-extension UILabel {
-
-	convenience init(closure: ValueClosure<UILabel>) {
-		self.init()
-		closure(self)
+	private func setupCollectionView() {
+		collectionView.alwaysBounceVertical = true
+		collectionView.backgroundColor = .systemBackground
 	}
-}
 
-func build<T>(closure: (T) -> Void) -> T where T: UIView {
-	let view = T()
-	closure(view)
-	return view
+	static func makeLayout() -> UICollectionViewCompositionalLayout {
+		return UICollectionViewCompositionalLayout { (_, _) -> NSCollectionLayoutSection? in
+			let spacing: CGFloat = 16.0
+			let partialSpacing = spacing / 2.0
+			let edgeInsets = NSDirectionalEdgeInsets(
+				top: partialSpacing,
+				leading: partialSpacing,
+				bottom: partialSpacing,
+				trailing: partialSpacing
+			)
+
+			let height: CGFloat = 100
+			let itemSize = NSCollectionLayoutSize(
+				widthDimension: .fractionalWidth(1.0),
+				heightDimension: .absolute(height)
+			)
+
+			let item = NSCollectionLayoutItem(layoutSize: itemSize)
+			item.contentInsets = edgeInsets
+			let groupSize = NSCollectionLayoutSize(
+				widthDimension: .fractionalWidth(1.0),
+				heightDimension: .estimated(height)
+			)
+
+			let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+			let section = NSCollectionLayoutSection(group: group)
+			section.contentInsets = edgeInsets
+			return section
+		}
+	}
+
+	private func setupView() {
+		backgroundColor = .systemBackground
+	}
 }
