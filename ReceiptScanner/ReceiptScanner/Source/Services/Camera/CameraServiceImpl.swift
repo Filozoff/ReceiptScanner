@@ -66,12 +66,9 @@ extension CameraServiceImpl: AVCaptureVideoDataOutputSampleBufferDelegate {
 		guard
 			let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer),
 			let exifOrientation = CGImagePropertyOrientation(rawValue: UInt32(UIDevice.current.orientation.rawValue))
-		else {
-            return
-        }
+		else { return }
 
 		let cameraIntrinsicData = CMGetAttachment(sampleBuffer, key: kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix, attachmentModeOut: nil)
-
 		let output = VideoOutput(pixelBuffer: pixelBuffer, orientation: exifOrientation, intrinsics: cameraIntrinsicData)
 		onOutputCaptured?(output)
 	}
