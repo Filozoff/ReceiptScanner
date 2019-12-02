@@ -30,6 +30,7 @@ class ScannerViewModel {
 	func setup(sessionClosure: ValueClosure<AVCaptureSession>) {
 		do {
 			try cameraService.setupSession()
+			sessionClosure(captureSession)
 		} catch {
 			// TODO: Present an error to a user.
 			print(error.localizedDescription)

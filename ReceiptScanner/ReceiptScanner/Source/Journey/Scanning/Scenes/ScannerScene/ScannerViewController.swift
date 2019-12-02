@@ -41,25 +41,20 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 		super.viewDidLoad()
 		
 		backedView.takePictureButton.setTitle(viewModel.takePhotoButtonTitle, for: .normal)
-	}
-	
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
 
 		viewModel.$quads.onCurrent { [weak self] (quads) in
 			guard let self = self else { return }
 			self.backedView.quadOverlayView.draw(quad: quads.first)
 		}
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
 
+		viewModel.observe()
 		viewModel.setup { [weak self] (session) in
 			self?.backedView.videoPreview.displayOutput(from: session)
 		}
-	}
-
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-
-		viewModel.observe()
 	}
 	
 	override func viewDidDisappear(_ animated: Bool) {
