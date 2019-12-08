@@ -6,6 +6,7 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
+import KWFoundation
 import UIKit
 
 class ScannerViewController: UIViewController, BackedViewProvider {
@@ -18,6 +19,7 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 		return .portrait
 	}
 	
+	private var cancellables = [CancellationToken]()
 	private var viewModel: ScannerViewModel
 	
 	// MARK: - Initialization
@@ -43,9 +45,9 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 		backedView.takePictureButton.setTitle(viewModel.takePhotoButtonTitle, for: .normal)
 
 		viewModel.$quads.onCurrent { [weak self] (quads) in
-			guard let self = self else { return }
-			self.backedView.quadOverlayView.draw(quad: quads.first)
+			self?.backedView.quadOverlayView.draw(quad: quads.first)
 		}
+		.store(in: &cancellables)
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
