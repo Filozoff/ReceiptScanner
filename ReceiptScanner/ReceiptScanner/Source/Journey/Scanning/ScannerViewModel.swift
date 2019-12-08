@@ -11,7 +11,7 @@ import NeuralService
 
 class ScannerViewModel {
 
-	@Bindable var quads = [Quad]()
+	@Observed var quads = [Quad]()
 
 	// TODO:
 	let takePhotoButtonTitle = ""
