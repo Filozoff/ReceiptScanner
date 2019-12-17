@@ -19,6 +19,7 @@
 		2FCACB0E2360BED900980027 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB0D2360BED900980027 /* Point.swift */; };
 		2FE5B8D42392D2690011DE09 /* CancellationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5B8D32392D2690011DE09 /* CancellationToken.swift */; };
 		2FE5B8D62392D6470011DE09 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5B8D52392D6470011DE09 /* Observer.swift */; };
+		2FF2D1F423A834FD008818CA /* StubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2D1F323A834FD008818CA /* StubClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2FCACB0D2360BED900980027 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		2FE5B8D32392D2690011DE09 /* CancellationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellationToken.swift; sourceTree = "<group>"; };
 		2FE5B8D52392D6470011DE09 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		2FF2D1F323A834FD008818CA /* StubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		2F81BCED2381D69A00CCC605 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF2D1F323A834FD008818CA /* StubClass.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF2D1F423A834FD008818CA /* StubClass.swift in Sources */,
 				2F95F75E2395B66800193518 /* CancellationTokenTests.swift in Sources */,
 				2F81BCEC2381D67300CCC605 /* ObservedTests.swift in Sources */,
 				2F95F760239ADF1000193518 /* ObserverTests.swift in Sources */,

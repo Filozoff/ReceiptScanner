@@ -11,6 +11,7 @@ import XCTest
 
 class ObserverTests: XCTestCase {
 
+	private let stubObject = StubClass()
 	private let stubValue = "test_value_1"
 	private var token: CancellationToken!
 
@@ -29,6 +30,19 @@ class ObserverTests: XCTestCase {
 		XCTAssertEqual(sut.subscribers.count, 1)
     }
 
+	func test_givenToken_whenBindCalled_thenNumberOfSubsribersIncreased() {
+
+		// given
+		let sut = Observer(value: stubValue)
+
+		// when
+		token = sut.bind(to: stubObject, for: \.stringProperty)
+
+		// then
+		XCTAssertNotNil(token)
+		XCTAssertEqual(sut.subscribers.count, 1)
+	}
+
 	func test_givenNullifiedToken_whenOnCurrentCalled_thenNumberOfSubsribersDidNotChanged() {
 
 		// given
@@ -40,6 +54,46 @@ class ObserverTests: XCTestCase {
 		// then
 		XCTAssertTrue(sut.subscribers.isEmpty)
     }
+
+	func test_givenNullifiedToken_whenBindCalled_thenNumberOfSubsribersDidNotChanged() {
+
+		// given
+		let sut = Observer(value: stubValue)
+
+		// when
+		_ = sut.bind(to: stubObject, for: \.stringProperty)
+
+		// then
+		XCTAssertTrue(sut.subscribers.isEmpty)
+	}
+
+	// MARK: - bind
+
+	func test_givenStubObjectWithKeyPath_whenBindCalled_thenObjectIsUpdatedWithInitialValue() {
+
+		// given
+		let sut = Observer(value: stubValue)
+
+		// when
+		token = sut.bind(to: stubObject, for: \.stringProperty)
+
+		// then
+		XCTAssertEqual(stubObject.stringProperty, stubValue)
+	}
+
+	func test_givenValue_whenBindCalled_thenObjectIsUpdatedWithNewValue() {
+
+		// given
+		let valueToSet = "new_value_2311"
+		let sut = Observer(value: stubValue)
+		token = sut.bind(to: stubObject, for: \.stringProperty)
+
+		// when
+		sut.set(value: valueToSet)
+
+		// then
+		XCTAssertEqual(stubObject.stringProperty, valueToSet)
+	}
 
 	// MARK: - onCurrent closure
 
