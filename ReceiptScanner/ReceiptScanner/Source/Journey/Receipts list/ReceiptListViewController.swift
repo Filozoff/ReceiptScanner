@@ -6,13 +6,13 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
+import Presentation
 import UIKit
 
 final class ReceiptListViewController: UIViewController, BackedViewProvider {
 
 	typealias View = ReceiptListView
 
-	private let cellIdentifier = "\(UICollectionViewCell.self)"
 	private var viewModel: ReceiptListViewModel
 
 	init(viewModel: ReceiptListViewModel) {
@@ -32,22 +32,27 @@ final class ReceiptListViewController: UIViewController, BackedViewProvider {
         super.viewDidLoad()
 
 		backedView.collectionView.dataSource = self
-		backedView.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
+		backedView.collectionView.register(ReceiptCell.self)
     }
 }
+
+// MARK: - UICollectionViewDataSource
 
 extension ReceiptListViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 21
+		return viewModel.receipts.count
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
-		cell.contentView.backgroundColor = .red
+		let cell: ReceiptCell = collectionView.dequeueReusableCell(for: indexPath)
+		let cellViewModel = viewModel.receipts[indexPath.row]
+		cell.apply(viewModel: cellViewModel)
 		return cell
 	}
 }
+
+// MARK: - Preview
 
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
@@ -59,7 +64,7 @@ struct ReceiptListViewControllerPreview: PreviewProvider {
     static var previews: some View {
 		Group {
 			ForEach(ColorScheme.allCases, id: \.self) { (colorScheme) in
-				ReceiptListViewController(viewModel: ReceiptListViewModel())
+				ReceiptListViewController(viewModel: Self.makePreviewViewModel())
 					.edgesIgnoringSafeArea(.all)
 					.environment(\.colorScheme, colorScheme)
 					.previewDisplayName("\(colorScheme)")
@@ -72,5 +77,29 @@ struct ReceiptListViewControllerPreview: PreviewProvider {
 //			}
 		}
     }
+
+	private static func makePreviewViewModel() -> ReceiptListViewModel {
+		var viewModel = ReceiptListViewModel()
+		viewModel.receipts = [
+			ReceiptCellViewModel(
+				receiptNameText: "AGD receipt",
+				shopNameText: "Media Markt"
+			),
+			ReceiptCellViewModel(
+				receiptNameText: "Friday's groceries",
+				shopNameText: "Auchan"
+			),
+			ReceiptCellViewModel(
+				receiptNameText: "Weekly shopping:\n - bean\n - apples\n - oranges\n - chocolates\n - ham\n - kielbasa\n - pierogi\n - cashews",
+				shopNameText: "Lidl"
+			),
+			ReceiptCellViewModel(
+				receiptNameText: "Dinner",
+				shopNameText: "Nice Bistro"
+			)
+		]
+
+		return viewModel
+	}
 }
 #endif

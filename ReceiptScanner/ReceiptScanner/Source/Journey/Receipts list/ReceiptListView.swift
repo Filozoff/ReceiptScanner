@@ -32,6 +32,14 @@ class ReceiptListView: UIView {
 		fatalError("init(coder:) has not been implemented")
 	}
 
+	// MARK: - Updates
+
+	override func layoutSubviews() {
+		super.layoutSubviews()
+
+		collectionView.collectionViewLayout.invalidateLayout()
+	}
+
 	override func updateConstraints() {
 		NSLayoutConstraint.activate([
 			collectionView.topAnchor.constraint(equalTo: topAnchor),
@@ -49,6 +57,8 @@ class ReceiptListView: UIView {
 	}
 }
 
+// MARK: - Setups
+
 extension ReceiptListView {
 
 	private func setupAddButton() {
@@ -60,38 +70,29 @@ extension ReceiptListView {
 		collectionView.backgroundColor = .systemBackground
 	}
 
-	static func makeLayout() -> UICollectionViewCompositionalLayout {
-		return UICollectionViewCompositionalLayout { (_, _) -> NSCollectionLayoutSection? in
-			let spacing: CGFloat = 16.0
-			let partialSpacing = spacing / 2.0
-			let edgeInsets = NSDirectionalEdgeInsets(
-				top: partialSpacing,
-				leading: partialSpacing,
-				bottom: partialSpacing,
-				trailing: partialSpacing
-			)
-
-			let height: CGFloat = 100
-			let itemSize = NSCollectionLayoutSize(
-				widthDimension: .fractionalWidth(1.0),
-				heightDimension: .absolute(height)
-			)
-
-			let item = NSCollectionLayoutItem(layoutSize: itemSize)
-			item.contentInsets = edgeInsets
-			let groupSize = NSCollectionLayoutSize(
-				widthDimension: .fractionalWidth(1.0),
-				heightDimension: .estimated(height)
-			)
-
-			let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-			let section = NSCollectionLayoutSection(group: group)
-			section.contentInsets = edgeInsets
-			return section
-		}
-	}
-
 	private func setupView() {
 		backgroundColor = .systemBackground
+	}
+}
+
+// MARK: - Factories
+
+extension ReceiptListView {
+
+	private static func makeLayout() -> UICollectionViewCompositionalLayout {
+		return UICollectionViewCompositionalLayout { (_, _) -> NSCollectionLayoutSection? in
+			let size = NSCollectionLayoutSize(
+				widthDimension: NSCollectionLayoutDimension.fractionalWidth(1),
+				heightDimension: NSCollectionLayoutDimension.estimated(344)
+			)
+			let item = NSCollectionLayoutItem(layoutSize: size)
+			let group = NSCollectionLayoutGroup.horizontal(layoutSize: size, subitem: item, count: 1)
+
+			let section = NSCollectionLayoutSection(group: group)
+			section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+			section.interGroupSpacing = 10
+
+			return section
+		}
 	}
 }

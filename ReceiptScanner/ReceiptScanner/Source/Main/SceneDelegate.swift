@@ -6,6 +6,7 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
+import Presentation
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
