@@ -42,6 +42,7 @@
 		2FD0AA7A2387099C005CB97E /* ReceiptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD0AA792387099C005CB97E /* ReceiptListViewController.swift */; };
 		2FEE56BC238B209700A9BFF3 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE56BB238B209700A9BFF3 /* Symbols.swift */; };
 		2FEE56BE238B265200A9BFF3 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE56BD238B265200A9BFF3 /* CircleButton.swift */; };
+		2FF2D1F223A8147F008818CA /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2D1F123A8147F008818CA /* UIViewPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		2FD0AA792387099C005CB97E /* ReceiptListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewController.swift; sourceTree = "<group>"; };
 		2FEE56BB238B209700A9BFF3 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		2FEE56BD238B265200A9BFF3 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		2FF2D1F123A8147F008818CA /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		2F02AE6B235B31EB0072C881 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2FF2D1F123A8147F008818CA /* UIViewPreview.swift */,
 				2F9F7DE5235A41350010D60F /* Extensions */,
 				2F9F7DE7235A41350010D60F /* Protocols */,
 			);
@@ -513,6 +516,7 @@
 				2FD0AA782387097B005CB97E /* ReceiptListView.swift in Sources */,
 				2FCE5C71239D7931008E2984 /* ViewModelApplicable.swift in Sources */,
 				2F14663F239EF28D0047EDC1 /* UILayoutPriorityExtension.swift in Sources */,
+				2FF2D1F223A8147F008818CA /* UIViewPreview.swift in Sources */,
 				2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */,
 				2F1B7FAF23635ABD00B574EE /* QuadOverlayView.swift in Sources */,
 			);
