@@ -15,6 +15,8 @@
 		2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE64235B31000072C881 /* ScannerViewController.swift */; };
 		2F0F576A238AD618007E8AD8 /* ReceiptListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F5769238AD618007E8AD8 /* ReceiptListViewModel.swift */; };
 		2F14663F239EF28D0047EDC1 /* UILayoutPriorityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14663E239EF28D0047EDC1 /* UILayoutPriorityExtension.swift */; };
+		2F14664323A044990047EDC1 /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14664223A044990047EDC1 /* CellIdentifiable.swift */; };
+		2F14664523A0451D0047EDC1 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14664423A0451D0047EDC1 /* UICollectionViewExtension.swift */; };
 		2F1B7FAF23635ABD00B574EE /* QuadOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B7FAE23635ABD00B574EE /* QuadOverlayView.swift */; };
 		2F1B7FB12363656A00B574EE /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B7FB02363656A00B574EE /* CGPointExtension.swift */; };
 		2F42D9D4235649B5005058EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D3235649B5005058EC /* AppDelegate.swift */; };
@@ -76,6 +78,8 @@
 		2F02AE64235B31000072C881 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = Scenes/ScannerScene/ScannerViewController.swift; sourceTree = "<group>"; };
 		2F0F5769238AD618007E8AD8 /* ReceiptListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewModel.swift; sourceTree = "<group>"; };
 		2F14663E239EF28D0047EDC1 /* UILayoutPriorityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayoutPriorityExtension.swift; sourceTree = "<group>"; };
+		2F14664223A044990047EDC1 /* CellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
+		2F14664423A0451D0047EDC1 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		2F1B7FAE23635ABD00B574EE /* QuadOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadOverlayView.swift; sourceTree = "<group>"; };
 		2F1B7FB02363656A00B574EE /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		2F42D9D0235649B5005058EC /* ReceiptScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				2F1B7FB02363656A00B574EE /* CGPointExtension.swift */,
+				2F14664423A0451D0047EDC1 /* UICollectionViewExtension.swift */,
 				2F14663E239EF28D0047EDC1 /* UILayoutPriorityExtension.swift */,
 				2F9F7DE6235A41350010D60F /* UIViewExtension.swift */,
 			);
@@ -287,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				2F9F7DE8235A41350010D60F /* BackedView.swift */,
+				2F14664223A044990047EDC1 /* CellIdentifiable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -481,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9F7DFA235A42180010D60F /* ButtonStyle.swift in Sources */,
+				2F14664523A0451D0047EDC1 /* UICollectionViewExtension.swift in Sources */,
 				2FD0AA7A2387099C005CB97E /* ReceiptListViewController.swift in Sources */,
 				2F1B7FB12363656A00B574EE /* CGPointExtension.swift in Sources */,
 				2F9F7DEA235A41350010D60F /* BackedView.swift in Sources */,
@@ -492,6 +499,7 @@
 				2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */,
 				2FAC63F6235CA349002FA800 /* ScannerViewModel.swift in Sources */,
 				2F02AE49235B2A840072C881 /* Layout.swift in Sources */,
+				2F14664323A044990047EDC1 /* CellIdentifiable.swift in Sources */,
 				2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */,
 				2F02AE52235B30B40072C881 /* CameraService.swift in Sources */,
 				2F0F576A238AD618007E8AD8 /* ReceiptListViewModel.swift in Sources */,
