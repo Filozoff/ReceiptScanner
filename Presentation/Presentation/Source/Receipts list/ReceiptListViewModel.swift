@@ -6,11 +6,12 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
+import Combine
 import KWFoundation
 
-public struct ReceiptListViewModel {
+public class ReceiptListViewModel {
 
-	@Observed public var receipts = [ReceiptCellViewModel]()
+	@Published public var receipts = [ReceiptCellViewModel]()
 
 	public init() {
 		receipts = [
