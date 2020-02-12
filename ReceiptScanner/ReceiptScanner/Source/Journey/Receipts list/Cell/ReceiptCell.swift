@@ -13,6 +13,7 @@ final class ReceiptCell: UICollectionViewCell, CellIdentifiable {
 
 	// MARK: - Properties
 	
+	let dateLabel = makeDateLabel()
 	let receiptNameLabel = makeReceiptNameLabel()
 	let shopNameLabel = makeShopNameLabel()
 
@@ -26,8 +27,11 @@ final class ReceiptCell: UICollectionViewCell, CellIdentifiable {
 		contentView.backgroundColor = .secondarySystemBackground
 		contentView.addSubviewWithoutAutoresizingMask(stackView)
 
-		stackView.addArrangedSubview(receiptNameLabel)
-		stackView.addArrangedSubview(shopNameLabel)
+		stackView.addArrangedSubviews([
+			dateLabel,
+			receiptNameLabel,
+			shopNameLabel
+		])
 
 		setNeedsUpdateConstraints()
 	}
@@ -51,6 +55,16 @@ final class ReceiptCell: UICollectionViewCell, CellIdentifiable {
 // MARK: - Factories
 
 extension ReceiptCell {
+
+	private static func makeDateLabel() -> UILabel {
+		return UILabel.make {
+			$0.adjustsFontForContentSizeCategory = true
+			$0.font = UIFont.preferredFont(forTextStyle: .caption1)
+			$0.numberOfLines = 1
+			$0.textAlignment = .right
+			$0.textColor = UIColor.secondaryLabel
+		}
+	}
 
 	private static func makeReceiptNameLabel() -> UILabel {
 		return UILabel.make {
@@ -82,6 +96,7 @@ extension ReceiptCell {
 extension ReceiptCell: ViewModelApplicable {
 
 	func apply(viewModel: ReceiptCellViewModel) {
+		dateLabel.text = viewModel.dateText
 		receiptNameLabel.text = viewModel.receiptNameText
 		shopNameLabel.text = viewModel.shopNameText
 	}
@@ -95,6 +110,7 @@ import SwiftUI
 struct ReceiptCellPreview: PreviewProvider {
 
 	private static let groceries = ReceiptCellViewModel(
+		dateText: "12-02-2020",
 		receiptNameText: "5th of December groceries",
 		shopNameText: "Fresh fruits shop"
 	)

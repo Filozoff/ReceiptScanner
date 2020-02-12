@@ -10,10 +10,12 @@ import Foundation
 
 public struct ReceiptCellViewModel {
 
+	public let dateText: String
 	public let receiptNameText: String
 	public let shopNameText: String
 
-	public init(receiptNameText: String, shopNameText: String) {
+	public init(dateText: String, receiptNameText: String, shopNameText: String) {
+		self.dateText = dateText
 		self.receiptNameText = receiptNameText
 		self.shopNameText = shopNameText
 	}

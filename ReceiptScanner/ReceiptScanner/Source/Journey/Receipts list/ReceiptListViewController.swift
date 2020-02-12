@@ -79,21 +79,25 @@ struct ReceiptListViewControllerPreview: PreviewProvider {
     }
 
 	private static func makePreviewViewModel() -> ReceiptListViewModel {
-		var viewModel = ReceiptListViewModel()
+		let viewModel = ReceiptListViewModel()
 		viewModel.receipts = [
 			ReceiptCellViewModel(
+				dateText: "12-02-2020",
 				receiptNameText: "AGD receipt",
 				shopNameText: "Media Markt"
 			),
 			ReceiptCellViewModel(
+				dateText: "12-02-2020",
 				receiptNameText: "Friday's groceries",
 				shopNameText: "Auchan"
 			),
 			ReceiptCellViewModel(
+				dateText: "12-02-2020",
 				receiptNameText: "Weekly shopping:\n - bean\n - apples\n - oranges\n - chocolates\n - ham\n - kielbasa\n - pierogi\n - cashews",
 				shopNameText: "Lidl"
 			),
 			ReceiptCellViewModel(
+				dateText: "12-02-2020",
 				receiptNameText: "Dinner",
 				shopNameText: "Nice Bistro"
 			)
