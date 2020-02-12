@@ -13,6 +13,8 @@
 		2FBD03652386FD6300EC64B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03612386FD6300EC64B8 /* Localizable.strings */; };
 		2FBD03662386FD6300EC64B8 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */; };
 		2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBD03642386FD6300EC64B8 /* LocalizedString.swift */; };
+		2FCE5C74239EDBCE008E2984 /* ReceiptCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C73239EDBCE008E2984 /* ReceiptCellViewModel.swift */; };
+		2FCE5C7A239EDC9E008E2984 /* ReceiptListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C79239EDC9E008E2984 /* ReceiptListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		2FBD03612386FD6300EC64B8 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		2FBD03642386FD6300EC64B8 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		2FCE5C73239EDBCE008E2984 /* ReceiptCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptCellViewModel.swift; sourceTree = "<group>"; };
+		2FCE5C79239EDC9E008E2984 /* ReceiptListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2F7C26432386F3D000E37119 /* Main */,
+				2FCE5C72239EDBA0008E2984 /* Receipts list */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -174,6 +179,15 @@
 				2FBD03642386FD6300EC64B8 /* LocalizedString.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		2FCE5C72239EDBA0008E2984 /* Receipts list */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE5C73239EDBCE008E2984 /* ReceiptCellViewModel.swift */,
+				2FCE5C79239EDC9E008E2984 /* ReceiptListViewModel.swift */,
+			);
+			path = "Receipts list";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +342,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCE5C7A239EDC9E008E2984 /* ReceiptListViewModel.swift in Sources */,
 				2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */,
+				2FCE5C74239EDBCE008E2984 /* ReceiptCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,9 @@
 		2F02AE67235B31000072C881 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE62235B31000072C881 /* ScannerView.swift */; };
 		2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE63235B31000072C881 /* VideoPreviewView.swift */; };
 		2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE64235B31000072C881 /* ScannerViewController.swift */; };
+		2F14663F239EF28D0047EDC1 /* UILayoutPriorityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14663E239EF28D0047EDC1 /* UILayoutPriorityExtension.swift */; };
+		2F14664323A044990047EDC1 /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14664223A044990047EDC1 /* CellIdentifiable.swift */; };
+		2F14664523A0451D0047EDC1 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14664423A0451D0047EDC1 /* UICollectionViewExtension.swift */; };
 		2F1B7FAF23635ABD00B574EE /* QuadOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B7FAE23635ABD00B574EE /* QuadOverlayView.swift */; };
 		2F1B7FB12363656A00B574EE /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B7FB02363656A00B574EE /* CGPointExtension.swift */; };
 		2F42D9D4235649B5005058EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42D9D3235649B5005058EC /* AppDelegate.swift */; };
@@ -33,6 +36,14 @@
 		2FCACB092360BDFD00980027 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; };
 		2FCACB0A2360BDFD00980027 /* KWFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FCACB152360DC5800980027 /* CameraServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB142360DC5800980027 /* CameraServiceImpl.swift */; };
+		2FCE5C6C239D77B0008E2984 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C6B239D77B0008E2984 /* ReceiptCell.swift */; };
+		2FCE5C71239D7931008E2984 /* ViewModelApplicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C70239D7931008E2984 /* ViewModelApplicable.swift */; };
+		2FD0AA782387097B005CB97E /* ReceiptListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD0AA772387097B005CB97E /* ReceiptListView.swift */; };
+		2FD0AA7A2387099C005CB97E /* ReceiptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD0AA792387099C005CB97E /* ReceiptListViewController.swift */; };
+		2FE37B8523F48C820002BE6D /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE37B8423F48C820002BE6D /* UIStackViewExtension.swift */; };
+		2FEE56BC238B209700A9BFF3 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE56BB238B209700A9BFF3 /* Symbols.swift */; };
+		2FEE56BE238B265200A9BFF3 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE56BD238B265200A9BFF3 /* CircleButton.swift */; };
+		2FF2D1F223A8147F008818CA /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2D1F123A8147F008818CA /* UIViewPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +79,9 @@
 		2F02AE62235B31000072C881 /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerView.swift; path = Scenes/ScannerScene/ScannerView.swift; sourceTree = "<group>"; };
 		2F02AE63235B31000072C881 /* VideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPreviewView.swift; path = Scenes/ScannerScene/VideoPreviewView.swift; sourceTree = "<group>"; };
 		2F02AE64235B31000072C881 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = Scenes/ScannerScene/ScannerViewController.swift; sourceTree = "<group>"; };
+		2F14663E239EF28D0047EDC1 /* UILayoutPriorityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayoutPriorityExtension.swift; sourceTree = "<group>"; };
+		2F14664223A044990047EDC1 /* CellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
+		2F14664423A0451D0047EDC1 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		2F1B7FAE23635ABD00B574EE /* QuadOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadOverlayView.swift; sourceTree = "<group>"; };
 		2F1B7FB02363656A00B574EE /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		2F42D9D0235649B5005058EC /* ReceiptScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +103,14 @@
 		2FBD035B2386FCD200EC64B8 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCACB082360BDFD00980027 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCACB142360DC5800980027 /* CameraServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceImpl.swift; sourceTree = "<group>"; };
+		2FCE5C6B239D77B0008E2984 /* ReceiptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
+		2FCE5C70239D7931008E2984 /* ViewModelApplicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelApplicable.swift; sourceTree = "<group>"; };
+		2FD0AA772387097B005CB97E /* ReceiptListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListView.swift; sourceTree = "<group>"; };
+		2FD0AA792387099C005CB97E /* ReceiptListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewController.swift; sourceTree = "<group>"; };
+		2FE37B8423F48C820002BE6D /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		2FEE56BB238B209700A9BFF3 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		2FEE56BD238B265200A9BFF3 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		2FF2D1F123A8147F008818CA /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +137,7 @@
 		2F02AE4C235B305B0072C881 /* Journey */ = {
 			isa = PBXGroup;
 			children = (
+				2FD0AA7623870947005CB97E /* Receipts list */,
 				2F02AE5F235B31000072C881 /* Scanning */,
 			);
 			path = Journey;
@@ -154,6 +177,7 @@
 		2F02AE6B235B31EB0072C881 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2FF2D1F123A8147F008818CA /* UIViewPreview.swift */,
 				2F9F7DE5235A41350010D60F /* Extensions */,
 				2F9F7DE7235A41350010D60F /* Protocols */,
 			);
@@ -264,6 +288,9 @@
 			isa = PBXGroup;
 			children = (
 				2F1B7FB02363656A00B574EE /* CGPointExtension.swift */,
+				2F14664423A0451D0047EDC1 /* UICollectionViewExtension.swift */,
+				2F14663E239EF28D0047EDC1 /* UILayoutPriorityExtension.swift */,
+				2FE37B8423F48C820002BE6D /* UIStackViewExtension.swift */,
 				2F9F7DE6235A41350010D60F /* UIViewExtension.swift */,
 			);
 			path = Extensions;
@@ -273,6 +300,8 @@
 			isa = PBXGroup;
 			children = (
 				2F9F7DE8235A41350010D60F /* BackedView.swift */,
+				2F14664223A044990047EDC1 /* CellIdentifiable.swift */,
+				2FCE5C70239D7931008E2984 /* ViewModelApplicable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -280,6 +309,8 @@
 		2F9F7DEB235A41B10010D60F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2FEE56BB238B209700A9BFF3 /* Symbols.swift */,
+				2FEE56B9238B1DD400A9BFF3 /* Controls */,
 				2F9F7DF3235A41D90010D60F /* Layout */,
 				2F9F7DF4235A42180010D60F /* Style */,
 			);
@@ -312,6 +343,40 @@
 				2FCACB082360BDFD00980027 /* KWFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FCE5C6D239D77B5008E2984 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE5C6B239D77B0008E2984 /* ReceiptCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2FD0AA7623870947005CB97E /* Receipts list */ = {
+			isa = PBXGroup;
+			children = (
+				2FD0AA772387097B005CB97E /* ReceiptListView.swift */,
+				2FD0AA792387099C005CB97E /* ReceiptListViewController.swift */,
+				2FCE5C6D239D77B5008E2984 /* Cell */,
+			);
+			path = "Receipts list";
+			sourceTree = "<group>";
+		};
+		2FEE56B9238B1DD400A9BFF3 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				2FEE56BA238B1DDD00A9BFF3 /* Buttons */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		2FEE56BA238B1DDD00A9BFF3 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2FEE56BD238B265200A9BFF3 /* CircleButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,20 +504,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9F7DFA235A42180010D60F /* ButtonStyle.swift in Sources */,
+				2F14664523A0451D0047EDC1 /* UICollectionViewExtension.swift in Sources */,
+				2FD0AA7A2387099C005CB97E /* ReceiptListViewController.swift in Sources */,
+				2FCE5C6C239D77B0008E2984 /* ReceiptCell.swift in Sources */,
 				2F1B7FB12363656A00B574EE /* CGPointExtension.swift in Sources */,
 				2F9F7DEA235A41350010D60F /* BackedView.swift in Sources */,
 				2F42D9D4235649B5005058EC /* AppDelegate.swift in Sources */,
 				2F02AE67235B31000072C881 /* ScannerView.swift in Sources */,
+				2FEE56BC238B209700A9BFF3 /* Symbols.swift in Sources */,
 				2F9F7DF8235A42180010D60F /* Stylable.swift in Sources */,
 				2F02AE51235B30B40072C881 /* CameraServiceError.swift in Sources */,
 				2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */,
 				2FAC63F6235CA349002FA800 /* ScannerViewModel.swift in Sources */,
 				2F02AE49235B2A840072C881 /* Layout.swift in Sources */,
+				2F14664323A044990047EDC1 /* CellIdentifiable.swift in Sources */,
 				2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */,
 				2F02AE52235B30B40072C881 /* CameraService.swift in Sources */,
 				2FCACB152360DC5800980027 /* CameraServiceImpl.swift in Sources */,
 				2F9F7DE9235A41350010D60F /* UIViewExtension.swift in Sources */,
+				2FEE56BE238B265200A9BFF3 /* CircleButton.swift in Sources */,
 				2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */,
+				2FD0AA782387097B005CB97E /* ReceiptListView.swift in Sources */,
+				2FCE5C71239D7931008E2984 /* ViewModelApplicable.swift in Sources */,
+				2F14663F239EF28D0047EDC1 /* UILayoutPriorityExtension.swift in Sources */,
+				2FF2D1F223A8147F008818CA /* UIViewPreview.swift in Sources */,
+				2FE37B8523F48C820002BE6D /* UIStackViewExtension.swift in Sources */,
 				2F42D9D6235649B5005058EC /* SceneDelegate.swift in Sources */,
 				2F1B7FAF23635ABD00B574EE /* QuadOverlayView.swift in Sources */,
 			);

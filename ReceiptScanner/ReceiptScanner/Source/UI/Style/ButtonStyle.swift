@@ -8,6 +8,26 @@
 
 import UIKit
 
+extension ViewStyle where T: CircleButton {
+
+	static var add: ViewStyle<T> {
+		let font = UIFont.preferredFont(forTextStyle: .title1)
+		let symbolConfiguration = UIImage.SymbolConfiguration(font: font)
+		return common.compose(with: ViewStyle<T> {
+			$0.backgroundColor = .secondarySystemBackground
+			$0.contentEdgeInsets = UIEdgeInsets(
+				top: Layout.Length.small,
+				left: Layout.Length.small,
+				bottom: Layout.Length.small,
+				right: Layout.Length.small
+			)
+			$0.layer.borderColor = UIColor.tertiarySystemFill.cgColor
+			$0.layer.borderWidth = 1.0
+			$0.setImage(UIImage(symbol: .plus, with: symbolConfiguration), for: .normal)
+		})
+	}
+}
+
 extension ViewStyle where T: UIButton {
 
 	static var common: ViewStyle<T> {
