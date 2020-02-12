@@ -32,6 +32,7 @@ final class ReceiptListViewController: UIViewController, BackedViewProvider {
         super.viewDidLoad()
 
 		backedView.collectionView.dataSource = self
+		backedView.collectionView.delegate = self
 		backedView.collectionView.register(ReceiptCell.self)
     }
 }
@@ -41,14 +42,24 @@ final class ReceiptListViewController: UIViewController, BackedViewProvider {
 extension ReceiptListViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return viewModel.receipts.count
+		return viewModel.cellViewModels.count
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell: ReceiptCell = collectionView.dequeueReusableCell(for: indexPath)
-		let cellViewModel = viewModel.receipts[indexPath.row]
+		let cellViewModel = viewModel.cellViewModels[indexPath.row]
 		cell.apply(viewModel: cellViewModel)
 		return cell
+	}
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension ReceiptListViewController: UICollectionViewDelegate {
+
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		collectionView.deselectItem(at: indexPath, animated: true)
+		viewModel.didSelectItem(at: indexPath)
 	}
 }
 
@@ -80,7 +91,7 @@ struct ReceiptListViewControllerPreview: PreviewProvider {
 
 	private static func makePreviewViewModel() -> ReceiptListViewModel {
 		let viewModel = ReceiptListViewModel()
-		viewModel.receipts = [
+		viewModel.cellViewModels = [
 			ReceiptCellViewModel(
 				dateText: "12-02-2020",
 				receiptNameText: "AGD receipt",

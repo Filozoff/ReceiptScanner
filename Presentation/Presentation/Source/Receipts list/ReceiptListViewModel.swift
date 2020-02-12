@@ -11,10 +11,25 @@ import KWFoundation
 
 public class ReceiptListViewModel {
 
-	@Published public var receipts = [ReceiptCellViewModel]()
+	@Published public var cellViewModels = [ReceiptCellViewModel]()
+
+	var onCellViewModelSelected: ValueClosure<ReceiptCellViewModel>?
 
 	public init() {
-		receipts = [
+		cellViewModels = Self.makeCellViewModels()
+	}
+	
+	public func didSelectItem(at indexPath: IndexPath) {
+		onCellViewModelSelected?(cellViewModels[indexPath.endIndex])
+	}
+}
+
+// MARK: - Temporary
+
+extension ReceiptListViewModel {
+
+	private static func makeCellViewModels() -> [ReceiptCellViewModel] {
+		return [
 			ReceiptCellViewModel(
 				dateText: "12-02-2020",
 				receiptNameText: "AGD receipt",
