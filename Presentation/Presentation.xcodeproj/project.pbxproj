@@ -11,7 +11,6 @@
 		2F79F4D723FF1ED800299D35 /* CameraService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8C1A3523F8245800D6AF8A /* CameraService.framework */; };
 		2F79F4DA23FF1EDB00299D35 /* NeuralService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8C1A3623F8245800D6AF8A /* NeuralService.framework */; };
 		2F7C26312386F35400E37119 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7C26272386F35400E37119 /* Presentation.framework */; };
-		2F7C26382386F35400E37119 /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7C262A2386F35400E37119 /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FBD03652386FD6300EC64B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03612386FD6300EC64B8 /* Localizable.strings */; };
 		2FBD03662386FD6300EC64B8 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */; };
 		2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBD03642386FD6300EC64B8 /* LocalizedString.swift */; };
@@ -32,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		2F7C26272386F35400E37119 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F7C262A2386F35400E37119 /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
 		2F7C262B2386F35400E37119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F7C26302386F35400E37119 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7C26372386F35400E37119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				2FE37B8923F4997E0002BE6D /* Scanning */,
-				2F7C26432386F3D000E37119 /* Main */,
 				2FCE5C72239EDBA0008E2984 /* Receipts list */,
 			);
 			path = Source;
@@ -124,14 +121,6 @@
 				2F7C262B2386F35400E37119 /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2F7C26432386F3D000E37119 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				2F7C262A2386F35400E37119 /* Presentation.h */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		2F7C26442386F3F800E37119 /* Supporting Files */ = {
@@ -216,7 +205,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F7C26382386F35400E37119 /* Presentation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

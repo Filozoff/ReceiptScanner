@@ -9,6 +9,7 @@
 import AVKit
 import CameraService
 import Combine
+import KWFoundation
 import NeuralService
 
 public class ScannerViewModel {

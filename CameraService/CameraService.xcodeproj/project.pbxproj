@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2F79F4A623FF13BB00299D35 /* CameraService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F49C23FF13BB00299D35 /* CameraService.framework */; };
-		2F79F4AD23FF13BB00299D35 /* CameraService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F79F49F23FF13BB00299D35 /* CameraService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F79F4C423FF160700299D35 /* CameraServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */; };
 		2F79F4C523FF160700299D35 /* CameraServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C223FF160700299D35 /* CameraServiceError.swift */; };
 		2F79F4C623FF160700299D35 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C323FF160700299D35 /* CameraService.swift */; };
@@ -28,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		2F79F49C23FF13BB00299D35 /* CameraService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CameraService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F79F49F23FF13BB00299D35 /* CameraService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraService.h; sourceTree = "<group>"; };
 		2F79F4A023FF13BB00299D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F79F4A523FF13BB00299D35 /* CameraServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F79F4AC23FF13BB00299D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				2F79F4BA23FF14DE00299D35 /* Camera */,
-				2F79F4B923FF147A00299D35 /* Main */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -119,14 +116,6 @@
 				2F79F4AC23FF13BB00299D35 /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2F79F4B923FF147A00299D35 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				2F79F49F23FF13BB00299D35 /* CameraService.h */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		2F79F4BA23FF14DE00299D35 /* Camera */ = {
@@ -156,7 +145,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F79F4AD23FF13BB00299D35 /* CameraService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
