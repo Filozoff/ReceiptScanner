@@ -5,6 +5,9 @@
       location = "group:KWFoundation/KWFoundation.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:CameraService/CameraService.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NeuralService/NeuralService.xcodeproj">
    </FileRef>
    <FileRef

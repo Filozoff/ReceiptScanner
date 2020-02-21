@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2F02AE49235B2A840072C881 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE48235B2A840072C881 /* Layout.swift */; };
-		2F02AE51235B30B40072C881 /* CameraServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE4F235B30B40072C881 /* CameraServiceError.swift */; };
-		2F02AE52235B30B40072C881 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE50235B30B40072C881 /* CameraService.swift */; };
 		2F02AE67235B31000072C881 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE62235B31000072C881 /* ScannerView.swift */; };
 		2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE63235B31000072C881 /* VideoPreviewView.swift */; };
 		2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02AE64235B31000072C881 /* ScannerViewController.swift */; };
@@ -23,19 +21,19 @@
 		2F42D9DD235649B5005058EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F42D9DC235649B5005058EC /* Assets.xcassets */; };
 		2F42D9E0235649B5005058EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F42D9DE235649B5005058EC /* LaunchScreen.storyboard */; };
 		2F4EB4FE2370BDC800B8E48A /* ReceiptScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EB4FD2370BDC800B8E48A /* ReceiptScannerTests.swift */; };
-		2F61965F2370ACA7007165C9 /* NeuralService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965E2370ACA7007165C9 /* NeuralService.framework */; };
-		2F6196602370ACA7007165C9 /* NeuralService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965E2370ACA7007165C9 /* NeuralService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F64DDF023F8295100A9B12C /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; };
+		2F64DDF123F8295100A9B12C /* KWFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F64DDF223F8297200A9B12C /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBD035B2386FCD200EC64B8 /* Presentation.framework */; };
+		2F64DDF323F8297200A9B12C /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBD035B2386FCD200EC64B8 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F79F4DC23FF1F0C00299D35 /* CameraService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F4CF23FF16C200299D35 /* CameraService.framework */; };
+		2F79F4DD23FF1F0C00299D35 /* CameraService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F4CF23FF16C200299D35 /* CameraService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F79F4DE23FF1F0D00299D35 /* NeuralService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965E2370ACA7007165C9 /* NeuralService.framework */; };
+		2F79F4DF23FF1F0D00299D35 /* NeuralService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965E2370ACA7007165C9 /* NeuralService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F9F7DE9235A41350010D60F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DE6235A41350010D60F /* UIViewExtension.swift */; };
 		2F9F7DEA235A41350010D60F /* BackedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DE8235A41350010D60F /* BackedView.swift */; };
 		2F9F7DF8235A42180010D60F /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF5235A42180010D60F /* Stylable.swift */; };
 		2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF6235A42180010D60F /* ViewStyle.swift */; };
 		2F9F7DFA235A42180010D60F /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7DF7235A42180010D60F /* ButtonStyle.swift */; };
-		2FAC63F6235CA349002FA800 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */; };
-		2FBD035C2386FCD200EC64B8 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBD035B2386FCD200EC64B8 /* Presentation.framework */; };
-		2FBD035D2386FCD200EC64B8 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBD035B2386FCD200EC64B8 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FCACB092360BDFD00980027 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; };
-		2FCACB0A2360BDFD00980027 /* KWFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACB082360BDFD00980027 /* KWFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FCACB152360DC5800980027 /* CameraServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB142360DC5800980027 /* CameraServiceImpl.swift */; };
 		2FCE5C6C239D77B0008E2984 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C6B239D77B0008E2984 /* ReceiptCell.swift */; };
 		2FCE5C71239D7931008E2984 /* ViewModelApplicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C70239D7931008E2984 /* ViewModelApplicable.swift */; };
 		2FD0AA782387097B005CB97E /* ReceiptListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD0AA772387097B005CB97E /* ReceiptListView.swift */; };
@@ -63,9 +61,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2FCACB0A2360BDFD00980027 /* KWFoundation.framework in Embed Frameworks */,
-				2F6196602370ACA7007165C9 /* NeuralService.framework in Embed Frameworks */,
-				2FBD035D2386FCD200EC64B8 /* Presentation.framework in Embed Frameworks */,
+				2F64DDF323F8297200A9B12C /* Presentation.framework in Embed Frameworks */,
+				2F79F4DD23FF1F0C00299D35 /* CameraService.framework in Embed Frameworks */,
+				2F64DDF123F8295100A9B12C /* KWFoundation.framework in Embed Frameworks */,
+				2F79F4DF23FF1F0D00299D35 /* NeuralService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,8 +73,6 @@
 
 /* Begin PBXFileReference section */
 		2F02AE48235B2A840072C881 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
-		2F02AE4F235B30B40072C881 /* CameraServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceError.swift; sourceTree = "<group>"; };
-		2F02AE50235B30B40072C881 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		2F02AE62235B31000072C881 /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerView.swift; path = Scenes/ScannerScene/ScannerView.swift; sourceTree = "<group>"; };
 		2F02AE63235B31000072C881 /* VideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPreviewView.swift; path = Scenes/ScannerScene/VideoPreviewView.swift; sourceTree = "<group>"; };
 		2F02AE64235B31000072C881 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = Scenes/ScannerScene/ScannerViewController.swift; sourceTree = "<group>"; };
@@ -94,15 +91,14 @@
 		2F61965E2370ACA7007165C9 /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6196772370B81F007165C9 /* ReceiptScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F61967B2370B81F007165C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F79F4CF23FF16C200299D35 /* CameraService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CameraService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9F7DE6235A41350010D60F /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2F9F7DE8235A41350010D60F /* BackedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackedView.swift; sourceTree = "<group>"; };
 		2F9F7DF5235A42180010D60F /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
 		2F9F7DF6235A42180010D60F /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 		2F9F7DF7235A42180010D60F /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
-		2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 		2FBD035B2386FCD200EC64B8 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCACB082360BDFD00980027 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FCACB142360DC5800980027 /* CameraServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceImpl.swift; sourceTree = "<group>"; };
 		2FCE5C6B239D77B0008E2984 /* ReceiptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
 		2FCE5C70239D7931008E2984 /* ViewModelApplicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelApplicable.swift; sourceTree = "<group>"; };
 		2FD0AA772387097B005CB97E /* ReceiptListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListView.swift; sourceTree = "<group>"; };
@@ -118,9 +114,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FCACB092360BDFD00980027 /* KWFoundation.framework in Frameworks */,
-				2F61965F2370ACA7007165C9 /* NeuralService.framework in Frameworks */,
-				2FBD035C2386FCD200EC64B8 /* Presentation.framework in Frameworks */,
+				2F64DDF223F8297200A9B12C /* Presentation.framework in Frameworks */,
+				2F79F4DC23FF1F0C00299D35 /* CameraService.framework in Frameworks */,
+				2F64DDF023F8295100A9B12C /* KWFoundation.framework in Frameworks */,
+				2F79F4DE23FF1F0D00299D35 /* NeuralService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,32 +140,12 @@
 			path = Journey;
 			sourceTree = "<group>";
 		};
-		2F02AE4D235B30B40072C881 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				2F02AE4E235B30B40072C881 /* Camera */,
-			);
-			name = Services;
-			path = ReceiptScanner/Source/Services;
-			sourceTree = SOURCE_ROOT;
-		};
-		2F02AE4E235B30B40072C881 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				2F02AE50235B30B40072C881 /* CameraService.swift */,
-				2F02AE4F235B30B40072C881 /* CameraServiceError.swift */,
-				2FCACB142360DC5800980027 /* CameraServiceImpl.swift */,
-			);
-			path = Camera;
-			sourceTree = "<group>";
-		};
 		2F02AE5F235B31000072C881 /* Scanning */ = {
 			isa = PBXGroup;
 			children = (
 				2F1B7FAE23635ABD00B574EE /* QuadOverlayView.swift */,
 				2F02AE62235B31000072C881 /* ScannerView.swift */,
 				2F02AE64235B31000072C881 /* ScannerViewController.swift */,
-				2FAC63F5235CA349002FA800 /* ScannerViewModel.swift */,
 				2F02AE63235B31000072C881 /* VideoPreviewView.swift */,
 			);
 			path = Scanning;
@@ -219,7 +196,6 @@
 				2F02AE6B235B31EB0072C881 /* Common */,
 				2F02AE4C235B305B0072C881 /* Journey */,
 				2F42D9F923564A36005058EC /* Main */,
-				2F02AE4D235B30B40072C881 /* Services */,
 				2F9F7DEB235A41B10010D60F /* UI */,
 			);
 			path = Source;
@@ -338,6 +314,7 @@
 		2FCACB072360BDFD00980027 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F79F4CF23FF16C200299D35 /* CameraService.framework */,
 				2FBD035B2386FCD200EC64B8 /* Presentation.framework */,
 				2F61965E2370ACA7007165C9 /* NeuralService.framework */,
 				2FCACB082360BDFD00980027 /* KWFoundation.framework */,
@@ -513,14 +490,10 @@
 				2F02AE67235B31000072C881 /* ScannerView.swift in Sources */,
 				2FEE56BC238B209700A9BFF3 /* Symbols.swift in Sources */,
 				2F9F7DF8235A42180010D60F /* Stylable.swift in Sources */,
-				2F02AE51235B30B40072C881 /* CameraServiceError.swift in Sources */,
 				2F02AE68235B31000072C881 /* VideoPreviewView.swift in Sources */,
-				2FAC63F6235CA349002FA800 /* ScannerViewModel.swift in Sources */,
 				2F02AE49235B2A840072C881 /* Layout.swift in Sources */,
 				2F14664323A044990047EDC1 /* CellIdentifiable.swift in Sources */,
 				2F9F7DF9235A42180010D60F /* ViewStyle.swift in Sources */,
-				2F02AE52235B30B40072C881 /* CameraService.swift in Sources */,
-				2FCACB152360DC5800980027 /* CameraServiceImpl.swift in Sources */,
 				2F9F7DE9235A41350010D60F /* UIViewExtension.swift in Sources */,
 				2FEE56BE238B265200A9BFF3 /* CircleButton.swift in Sources */,
 				2F02AE69235B31000072C881 /* ScannerViewController.swift in Sources */,

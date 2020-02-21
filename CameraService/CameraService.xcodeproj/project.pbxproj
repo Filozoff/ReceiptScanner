@@ -7,159 +7,141 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FCACAE92360BAB000980027 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACADF2360BAB000980027 /* KWFoundation.framework */; };
-		2FCACB032360BD8D00980027 /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB012360BD8C00980027 /* Quad.swift */; };
-		2FCACB042360BD8D00980027 /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB022360BD8C00980027 /* Closure.swift */; };
-		2FCACB0E2360BED900980027 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCACB0D2360BED900980027 /* Point.swift */; };
-		2FF2D1F423A834FD008818CA /* StubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2D1F323A834FD008818CA /* StubClass.swift */; };
+		2F79F4A623FF13BB00299D35 /* CameraService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F49C23FF13BB00299D35 /* CameraService.framework */; };
+		2F79F4C423FF160700299D35 /* CameraServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */; };
+		2F79F4C523FF160700299D35 /* CameraServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C223FF160700299D35 /* CameraServiceError.swift */; };
+		2F79F4C623FF160700299D35 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C323FF160700299D35 /* CameraService.swift */; };
+		2F79F4CA23FF164700299D35 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F4C823FF164700299D35 /* KWFoundation.framework */; };
+		2F79F4D623FF173E00299D35 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4D523FF173E00299D35 /* Output.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2FCACAEA2360BAB000980027 /* PBXContainerItemProxy */ = {
+		2F79F4A723FF13BB00299D35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2FCACAD62360BAB000980027 /* Project object */;
+			containerPortal = 2F79F49323FF13BB00299D35 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2FCACADE2360BAB000980027;
-			remoteInfo = KWFoundation;
+			remoteGlobalIDString = 2F79F49B23FF13BB00299D35;
+			remoteInfo = CameraService;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2FCACADF2360BAB000980027 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FCACAE32360BAB000980027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FCACAE82360BAB000980027 /* KWFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KWFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FCACAEF2360BAB000980027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FCACB012360BD8C00980027 /* Quad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quad.swift; sourceTree = "<group>"; };
-		2FCACB022360BD8C00980027 /* Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
-		2FCACB0D2360BED900980027 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		2FF2D1F323A834FD008818CA /* StubClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubClass.swift; sourceTree = "<group>"; };
+		2F79F49C23FF13BB00299D35 /* CameraService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CameraService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F79F4A023FF13BB00299D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F79F4A523FF13BB00299D35 /* CameraServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F79F4AC23FF13BB00299D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceImpl.swift; sourceTree = "<group>"; };
+		2F79F4C223FF160700299D35 /* CameraServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceError.swift; sourceTree = "<group>"; };
+		2F79F4C323FF160700299D35 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		2F79F4C823FF164700299D35 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F79F4C923FF164700299D35 /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F79F4D523FF173E00299D35 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FCACADC2360BAB000980027 /* Frameworks */ = {
+		2F79F49923FF13BB00299D35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F79F4CA23FF164700299D35 /* KWFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FCACAE52360BAB000980027 /* Frameworks */ = {
+		2F79F4A223FF13BB00299D35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FCACAE92360BAB000980027 /* KWFoundation.framework in Frameworks */,
+				2F79F4A623FF13BB00299D35 /* CameraService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F81BCE92381D63100CCC605 /* Source */ = {
+		2F79F49223FF13BB00299D35 = {
 			isa = PBXGroup;
 			children = (
-				2F81BCED2381D69A00CCC605 /* Mocks */,
-				2F81BCEA2381D64100CCC605 /* Tests */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		2F81BCEA2381D64100CCC605 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		2F81BCED2381D69A00CCC605 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				2FF2D1F323A834FD008818CA /* StubClass.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		2FCACAD52360BAB000980027 = {
-			isa = PBXGroup;
-			children = (
-				2FCACAE12360BAB000980027 /* KWFoundation */,
-				2FCACAEC2360BAB000980027 /* KWFoundationTests */,
-				2FCACAE02360BAB000980027 /* Products */,
+				2F79F49E23FF13BB00299D35 /* CameraService */,
+				2F79F4A923FF13BB00299D35 /* CameraServiceTests */,
+				2F79F49D23FF13BB00299D35 /* Products */,
+				2F79F4C723FF164700299D35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2FCACAE02360BAB000980027 /* Products */ = {
+		2F79F49D23FF13BB00299D35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FCACADF2360BAB000980027 /* KWFoundation.framework */,
-				2FCACAE82360BAB000980027 /* KWFoundationTests.xctest */,
+				2F79F49C23FF13BB00299D35 /* CameraService.framework */,
+				2F79F4A523FF13BB00299D35 /* CameraServiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2FCACAE12360BAB000980027 /* KWFoundation */ = {
+		2F79F49E23FF13BB00299D35 /* CameraService */ = {
 			isa = PBXGroup;
 			children = (
-				2FCACAFA2360BAF900980027 /* Source */,
-				2FCACAFB2360BB0100980027 /* Supporting Files */,
+				2F79F4B623FF13DA00299D35 /* Source */,
+				2F79F4B723FF13E700299D35 /* Supporting Files */,
 			);
-			path = KWFoundation;
+			path = CameraService;
 			sourceTree = "<group>";
 		};
-		2FCACAEC2360BAB000980027 /* KWFoundationTests */ = {
+		2F79F4A923FF13BB00299D35 /* CameraServiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F81BCE92381D63100CCC605 /* Source */,
-				2FCACAF92360BABA00980027 /* Supporting Files */,
+				2F79F4B823FF144900299D35 /* Supporting Files */,
 			);
-			path = KWFoundationTests;
+			path = CameraServiceTests;
 			sourceTree = "<group>";
 		};
-		2FCACAF92360BABA00980027 /* Supporting Files */ = {
+		2F79F4B623FF13DA00299D35 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2FCACAEF2360BAB000980027 /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2FCACAFA2360BAF900980027 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				2FCACB062360BDD700980027 /* Common */,
-				2FCACB052360BDC900980027 /* Geometry */,
+				2F79F4BA23FF14DE00299D35 /* Camera */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		2FCACAFB2360BB0100980027 /* Supporting Files */ = {
+		2F79F4B723FF13E700299D35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2FCACAE32360BAB000980027 /* Info.plist */,
+				2F79F4A023FF13BB00299D35 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2FCACB052360BDC900980027 /* Geometry */ = {
+		2F79F4B823FF144900299D35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2FCACB0D2360BED900980027 /* Point.swift */,
-				2FCACB012360BD8C00980027 /* Quad.swift */,
+				2F79F4AC23FF13BB00299D35 /* Info.plist */,
 			);
-			path = Geometry;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2FCACB062360BDD700980027 /* Common */ = {
+		2F79F4BA23FF14DE00299D35 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				2FCACB022360BD8C00980027 /* Closure.swift */,
+				2F79F4D523FF173E00299D35 /* Output.swift */,
+				2F79F4C323FF160700299D35 /* CameraService.swift */,
+				2F79F4C223FF160700299D35 /* CameraServiceError.swift */,
+				2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */,
 			);
-			path = Common;
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		2F79F4C723FF164700299D35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F79F4C823FF164700299D35 /* KWFoundation.framework */,
+				2F79F4C923FF164700299D35 /* NeuralService.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2FCACADA2360BAB000980027 /* Headers */ = {
+		2F79F49723FF13BB00299D35 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -169,62 +151,62 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2FCACADE2360BAB000980027 /* KWFoundation */ = {
+		2F79F49B23FF13BB00299D35 /* CameraService */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FCACAF32360BAB100980027 /* Build configuration list for PBXNativeTarget "KWFoundation" */;
+			buildConfigurationList = 2F79F4B023FF13BB00299D35 /* Build configuration list for PBXNativeTarget "CameraService" */;
 			buildPhases = (
-				2FCACADA2360BAB000980027 /* Headers */,
-				2FCACADB2360BAB000980027 /* Sources */,
-				2FCACADC2360BAB000980027 /* Frameworks */,
-				2FCACADD2360BAB000980027 /* Resources */,
+				2F79F49723FF13BB00299D35 /* Headers */,
+				2F79F49823FF13BB00299D35 /* Sources */,
+				2F79F49923FF13BB00299D35 /* Frameworks */,
+				2F79F49A23FF13BB00299D35 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KWFoundation;
-			productName = KWFoundation;
-			productReference = 2FCACADF2360BAB000980027 /* KWFoundation.framework */;
+			name = CameraService;
+			productName = CameraService;
+			productReference = 2F79F49C23FF13BB00299D35 /* CameraService.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2FCACAE72360BAB000980027 /* KWFoundationTests */ = {
+		2F79F4A423FF13BB00299D35 /* CameraServiceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FCACAF62360BAB100980027 /* Build configuration list for PBXNativeTarget "KWFoundationTests" */;
+			buildConfigurationList = 2F79F4B323FF13BB00299D35 /* Build configuration list for PBXNativeTarget "CameraServiceTests" */;
 			buildPhases = (
-				2FCACAE42360BAB000980027 /* Sources */,
-				2FCACAE52360BAB000980027 /* Frameworks */,
-				2FCACAE62360BAB000980027 /* Resources */,
+				2F79F4A123FF13BB00299D35 /* Sources */,
+				2F79F4A223FF13BB00299D35 /* Frameworks */,
+				2F79F4A323FF13BB00299D35 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2FCACAEB2360BAB000980027 /* PBXTargetDependency */,
+				2F79F4A823FF13BB00299D35 /* PBXTargetDependency */,
 			);
-			name = KWFoundationTests;
-			productName = KWFoundationTests;
-			productReference = 2FCACAE82360BAB000980027 /* KWFoundationTests.xctest */;
+			name = CameraServiceTests;
+			productName = CameraServiceTests;
+			productReference = 2F79F4A523FF13BB00299D35 /* CameraServiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2FCACAD62360BAB000980027 /* Project object */ = {
+		2F79F49323FF13BB00299D35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Kamil Wyszomierski";
 				TargetAttributes = {
-					2FCACADE2360BAB000980027 = {
-						CreatedOnToolsVersion = 11.1;
+					2F79F49B23FF13BB00299D35 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
-					2FCACAE72360BAB000980027 = {
-						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1120;
+					2F79F4A423FF13BB00299D35 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 2FCACAD92360BAB000980027 /* Build configuration list for PBXProject "KWFoundation" */;
+			buildConfigurationList = 2F79F49623FF13BB00299D35 /* Build configuration list for PBXProject "CameraService" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,26 +214,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 2FCACAD52360BAB000980027;
-			productRefGroup = 2FCACAE02360BAB000980027 /* Products */;
+			mainGroup = 2F79F49223FF13BB00299D35;
+			productRefGroup = 2F79F49D23FF13BB00299D35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FCACADE2360BAB000980027 /* KWFoundation */,
-				2FCACAE72360BAB000980027 /* KWFoundationTests */,
+				2F79F49B23FF13BB00299D35 /* CameraService */,
+				2F79F4A423FF13BB00299D35 /* CameraServiceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2FCACADD2360BAB000980027 /* Resources */ = {
+		2F79F49A23FF13BB00299D35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FCACAE62360BAB000980027 /* Resources */ = {
+		2F79F4A323FF13BB00299D35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,40 +243,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2FCACADB2360BAB000980027 /* Sources */ = {
+		2F79F49823FF13BB00299D35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FCACB032360BD8D00980027 /* Quad.swift in Sources */,
-				2FCACB042360BD8D00980027 /* Closure.swift in Sources */,
-				2FCACB0E2360BED900980027 /* Point.swift in Sources */,
+				2F79F4D623FF173E00299D35 /* Output.swift in Sources */,
+				2F79F4C423FF160700299D35 /* CameraServiceImpl.swift in Sources */,
+				2F79F4C523FF160700299D35 /* CameraServiceError.swift in Sources */,
+				2F79F4C623FF160700299D35 /* CameraService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FCACAE42360BAB000980027 /* Sources */ = {
+		2F79F4A123FF13BB00299D35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF2D1F423A834FD008818CA /* StubClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2FCACAEB2360BAB000980027 /* PBXTargetDependency */ = {
+		2F79F4A823FF13BB00299D35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2FCACADE2360BAB000980027 /* KWFoundation */;
-			targetProxy = 2FCACAEA2360BAB000980027 /* PBXContainerItemProxy */;
+			target = 2F79F49B23FF13BB00299D35 /* CameraService */;
+			targetProxy = 2F79F4A723FF13BB00299D35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2FCACAF12360BAB100980027 /* Debug */ = {
+		2F79F4AE23FF13BB00299D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -349,17 +330,15 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		2FCACAF22360BAB100980027 /* Release */ = {
+		2F79F4AF23FF13BB00299D35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -407,54 +386,56 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		2FCACAF42360BAB100980027 /* Debug */ = {
+		2F79F4B123FF13BB00299D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "KWFoundation/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "CameraService/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.KWFoundation;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.CameraService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2FCACAF52360BAB100980027 /* Release */ = {
+		2F79F4B223FF13BB00299D35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "KWFoundation/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "CameraService/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.KWFoundation;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.CameraService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -462,41 +443,38 @@
 			};
 			name = Release;
 		};
-		2FCACAF72360BAB100980027 /* Debug */ = {
+		2F79F4B423FF13BB00299D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
-				INFOPLIST_FILE = "KWFoundationTests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "CameraServiceTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.KWFoundationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.CameraServiceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2FCACAF82360BAB100980027 /* Release */ = {
+		2F79F4B523FF13BB00299D35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3A96C9WSG;
-				INFOPLIST_FILE = "KWFoundationTests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "CameraServiceTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.KWFoundationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.kamil.wyszomierski.CameraServiceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,34 +484,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FCACAD92360BAB000980027 /* Build configuration list for PBXProject "KWFoundation" */ = {
+		2F79F49623FF13BB00299D35 /* Build configuration list for PBXProject "CameraService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FCACAF12360BAB100980027 /* Debug */,
-				2FCACAF22360BAB100980027 /* Release */,
+				2F79F4AE23FF13BB00299D35 /* Debug */,
+				2F79F4AF23FF13BB00299D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FCACAF32360BAB100980027 /* Build configuration list for PBXNativeTarget "KWFoundation" */ = {
+		2F79F4B023FF13BB00299D35 /* Build configuration list for PBXNativeTarget "CameraService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FCACAF42360BAB100980027 /* Debug */,
-				2FCACAF52360BAB100980027 /* Release */,
+				2F79F4B123FF13BB00299D35 /* Debug */,
+				2F79F4B223FF13BB00299D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FCACAF62360BAB100980027 /* Build configuration list for PBXNativeTarget "KWFoundationTests" */ = {
+		2F79F4B323FF13BB00299D35 /* Build configuration list for PBXNativeTarget "CameraServiceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FCACAF72360BAB100980027 /* Debug */,
-				2FCACAF82360BAB100980027 /* Release */,
+				2F79F4B423FF13BB00299D35 /* Debug */,
+				2F79F4B523FF13BB00299D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2FCACAD62360BAB000980027 /* Project object */;
+	rootObject = 2F79F49323FF13BB00299D35 /* Project object */;
 }

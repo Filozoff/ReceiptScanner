@@ -14,7 +14,7 @@ class RectangleDetector: RectangleDetecting {
 
 	init() { }
 
-	func detect(from videoOutput: VideoOutput, completion: @escaping ValueClosure<Result<[Quad], Error>>) {
+	func detect(from videoOutput: CameraOutput, completion: @escaping ValueClosure<Result<[Quad], Error>>) {
 		var requestOptions = [VNImageOption: Any]()
 		if let videoIntrinsics = videoOutput.intrinsics {
 			requestOptions = [.cameraIntrinsics: videoIntrinsics]

@@ -22,7 +22,7 @@ class RectangleDetectorTests: XCTestCase {
 		let receiptImage = try XCTUnwrap(UIImage(named: "simple_receipt", in: bundle, with: nil))
 		let receiptImageBuffer = try XCTUnwrap(buffer(from: receiptImage))
 		let intrinsics = [VNImageOption: Any]() as CFTypeRef
-		let videoOutput = VideoOutput(pixelBuffer: receiptImageBuffer, orientation: .up, intrinsics: intrinsics)
+		let videoOutput = CameraOutput(pixelBuffer: receiptImageBuffer, orientation: .up, intrinsics: intrinsics)
 
 		// when
 		sut.detect(from: videoOutput) { (result) in

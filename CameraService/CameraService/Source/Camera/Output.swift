@@ -1,15 +1,15 @@
 //
-//  VideoOutput.swift
-//  ReceiptScanner
+//  Output.swift
+//  CameraService
 //
-//  Created by Kamil Wyszomierski on 23/10/2019.
-//  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
+//  Created by Kamil Wyszomierski on 20/02/2020.
+//  Copyright © 2020 Kamil Wyszomierski. All rights reserved.
 //
 
 import CoreVideo
 import ImageIO
 
-public class VideoOutput {
+public class Output {
 
 	public let pixelBuffer: CVImageBuffer
 	public let orientation: CGImagePropertyOrientation

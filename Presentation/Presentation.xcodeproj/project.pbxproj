@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F64DDEE23F8292D00A9B12C /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBD03572386FCC200EC64B8 /* KWFoundation.framework */; };
+		2F79F4D723FF1ED800299D35 /* CameraService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8C1A3523F8245800D6AF8A /* CameraService.framework */; };
+		2F79F4DA23FF1EDB00299D35 /* NeuralService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8C1A3623F8245800D6AF8A /* NeuralService.framework */; };
 		2F7C26312386F35400E37119 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7C26272386F35400E37119 /* Presentation.framework */; };
-		2F7C26382386F35400E37119 /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7C262A2386F35400E37119 /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FBD03582386FCC200EC64B8 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBD03572386FCC200EC64B8 /* KWFoundation.framework */; };
 		2FBD03652386FD6300EC64B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03612386FD6300EC64B8 /* Localizable.strings */; };
 		2FBD03662386FD6300EC64B8 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */; };
 		2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBD03642386FD6300EC64B8 /* LocalizedString.swift */; };
 		2FCE5C74239EDBCE008E2984 /* ReceiptCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C73239EDBCE008E2984 /* ReceiptCellViewModel.swift */; };
 		2FCE5C7A239EDC9E008E2984 /* ReceiptListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C79239EDC9E008E2984 /* ReceiptListViewModel.swift */; };
+		2FE37B8823F499420002BE6D /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE37B8723F499420002BE6D /* ScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,16 +31,18 @@
 
 /* Begin PBXFileReference section */
 		2F7C26272386F35400E37119 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F7C262A2386F35400E37119 /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
 		2F7C262B2386F35400E37119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F7C26302386F35400E37119 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7C26372386F35400E37119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F8C1A3523F8245800D6AF8A /* CameraService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CameraService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8C1A3623F8245800D6AF8A /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBD03572386FCC200EC64B8 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBD03612386FD6300EC64B8 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		2FBD03642386FD6300EC64B8 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		2FCE5C73239EDBCE008E2984 /* ReceiptCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptCellViewModel.swift; sourceTree = "<group>"; };
 		2FCE5C79239EDC9E008E2984 /* ReceiptListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptListViewModel.swift; sourceTree = "<group>"; };
+		2FE37B8723F499420002BE6D /* ScannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FBD03582386FCC200EC64B8 /* KWFoundation.framework in Frameworks */,
+				2F79F4D723FF1ED800299D35 /* CameraService.framework in Frameworks */,
+				2F79F4DA23FF1EDB00299D35 /* NeuralService.framework in Frameworks */,
+				2F64DDEE23F8292D00A9B12C /* KWFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +109,7 @@
 		2F7C26412386F37700E37119 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2F7C26432386F3D000E37119 /* Main */,
+				2FE37B8923F4997E0002BE6D /* Scanning */,
 				2FCE5C72239EDBA0008E2984 /* Receipts list */,
 			);
 			path = Source;
@@ -115,14 +121,6 @@
 				2F7C262B2386F35400E37119 /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2F7C26432386F3D000E37119 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				2F7C262A2386F35400E37119 /* Presentation.h */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		2F7C26442386F3F800E37119 /* Supporting Files */ = {
@@ -151,6 +149,8 @@
 		2FBD03562386FCC200EC64B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F8C1A3523F8245800D6AF8A /* CameraService.framework */,
+				2F8C1A3623F8245800D6AF8A /* NeuralService.framework */,
 				2FBD03572386FCC200EC64B8 /* KWFoundation.framework */,
 			);
 			name = Frameworks;
@@ -190,6 +190,14 @@
 			path = "Receipts list";
 			sourceTree = "<group>";
 		};
+		2FE37B8923F4997E0002BE6D /* Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				2FE37B8723F499420002BE6D /* ScannerViewModel.swift */,
+			);
+			path = Scanning;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -197,7 +205,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F7C26382386F35400E37119 /* Presentation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +352,7 @@
 				2FCE5C7A239EDC9E008E2984 /* ReceiptListViewModel.swift in Sources */,
 				2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */,
 				2FCE5C74239EDBCE008E2984 /* ReceiptCellViewModel.swift in Sources */,
+				2FE37B8823F499420002BE6D /* ScannerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

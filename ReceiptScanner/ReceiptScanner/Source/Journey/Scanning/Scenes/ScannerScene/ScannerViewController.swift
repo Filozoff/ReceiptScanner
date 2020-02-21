@@ -8,6 +8,7 @@
 
 import Combine
 import KWFoundation
+import Presentation
 import UIKit
 
 class ScannerViewController: UIViewController, BackedViewProvider {
@@ -25,7 +26,7 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 	
 	// MARK: - Initialization
 	
-	init(viewModel: ScannerViewModel = ScannerViewModel()) {
+	init(viewModel: ScannerViewModel) {
 		self.viewModel = viewModel
 		super.init(nibName: nil, bundle: nil)
 	}
@@ -55,8 +56,13 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 		super.viewDidAppear(animated)
 
 		viewModel.observe()
-		viewModel.setup { [weak self] (session) in
-			self?.backedView.videoPreview.displayOutput(from: session)
+		let result = viewModel.setup()
+		switch result {
+		case .failure:
+			break
+
+		case .success(let session):
+			backedView.videoPreview.displayOutput(from: session)
 		}
 	}
 	

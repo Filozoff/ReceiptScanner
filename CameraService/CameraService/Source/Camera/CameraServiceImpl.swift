@@ -7,30 +7,37 @@
 //
 
 import AVKit
-import NeuralService
+import Combine
 
-class CameraServiceImpl: NSObject, CameraService {
+public class CameraServiceImpl: NSObject, CameraService {
 
 	// MARK: - Properties
 
-	var onOutputCaptured: ValueClosure<VideoOutput>?
+	public let output = PassthroughSubject<Output, Never>()
 
-	private let captureSession: AVCaptureSession
+	private let captureSession = AVCaptureSession()
 	private let outputQueue = DispatchQueue(label: "camera.output")
 
 	// MARK: - Initialization
 
-	init(captureSession: AVCaptureSession) {
-		self.captureSession = captureSession
-	}
-
 	// MARK: - Session
 
-	func setupSession() throws {
-		captureSession.beginConfiguration()
-		try addInput()
-		try addOutput()
-		captureSession.commitConfiguration()
+	public func setup() -> Result<AVCaptureSession, Error> {
+		return Result { [unowned self] () -> AVCaptureSession in
+			self.captureSession.beginConfiguration()
+			try self.addInput()
+			try self.addOutput()
+			self.captureSession.commitConfiguration()
+			return self.captureSession
+		}
+	}
+
+	public func startSession() {
+		captureSession.startRunning()
+	}
+
+	public func stopSession() {
+		captureSession.stopRunning()
 	}
 
 	private func addOutput() throws {
@@ -62,14 +69,18 @@ class CameraServiceImpl: NSObject, CameraService {
 
 extension CameraServiceImpl: AVCaptureVideoDataOutputSampleBufferDelegate {
 
-	func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+	public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
 		guard
 			let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer),
 			let exifOrientation = CGImagePropertyOrientation(rawValue: UInt32(UIDevice.current.orientation.rawValue))
 		else { return }
 
-		let cameraIntrinsicData = CMGetAttachment(sampleBuffer, key: kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix, attachmentModeOut: nil)
-		let output = VideoOutput(pixelBuffer: pixelBuffer, orientation: exifOrientation, intrinsics: cameraIntrinsicData)
-		onOutputCaptured?(output)
+		let cameraIntrinsicData = CMGetAttachment(
+			sampleBuffer,
+			key: kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix,
+			attachmentModeOut: nil
+		)
+		let output = Output(pixelBuffer: pixelBuffer, orientation: exifOrientation, intrinsics: cameraIntrinsicData)
+		self.output.send(output)
 	}
 }

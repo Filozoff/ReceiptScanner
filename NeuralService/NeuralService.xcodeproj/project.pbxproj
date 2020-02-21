@@ -8,16 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2F6196422370AB6E007165C9 /* NeuralService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6196382370AB6E007165C9 /* NeuralService.framework */; };
-		2F6196492370AB6E007165C9 /* NeuralService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F61963B2370AB6E007165C9 /* NeuralService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F61965B2370AC92007165C9 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965A2370AC92007165C9 /* KWFoundation.framework */; };
 		2F6196632370ACFA007165C9 /* PointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196612370ACFA007165C9 /* PointExtension.swift */; };
 		2F6196642370ACFA007165C9 /* QuadExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196622370ACFA007165C9 /* QuadExtension.swift */; };
 		2F6196692370ADEB007165C9 /* PointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196672370ADEB007165C9 /* PointTests.swift */; };
 		2F61966A2370ADEB007165C9 /* QuadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196682370ADEB007165C9 /* QuadTests.swift */; };
 		2F61966C2370AE5F007165C9 /* RectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61966B2370AE5F007165C9 /* RectangleDetector.swift */; };
-		2F61966E2370AEC8007165C9 /* VideoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61966D2370AEC7007165C9 /* VideoOutput.swift */; };
+		2F61966E2370AEC8007165C9 /* CameraOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61966D2370AEC7007165C9 /* CameraOutput.swift */; };
 		2F6196702370B039007165C9 /* RectangleDetecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61966F2370B039007165C9 /* RectangleDetecting.swift */; };
 		2F6196722370B46E007165C9 /* DetectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6196712370B46E007165C9 /* DetectorFactory.swift */; };
+		2F64DDEB23F8292400A9B12C /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F61965A2370AC92007165C9 /* KWFoundation.framework */; };
 		2F81BCF32383208300CCC605 /* RectangleDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81BCF22383208300CCC605 /* RectangleDetectorTests.swift */; };
 		2F81BCF52383249600CCC605 /* RectangleDetectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81BCF42383249600CCC605 /* RectangleDetectorError.swift */; };
 		2F81BCF823832BD100CCC605 /* Receipts.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F81BCF723832BD100CCC605 /* Receipts.xcassets */; };
@@ -35,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		2F6196382370AB6E007165C9 /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F61963B2370AB6E007165C9 /* NeuralService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NeuralService.h; sourceTree = "<group>"; };
 		2F61963C2370AB6E007165C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F6196412370AB6E007165C9 /* NeuralServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuralServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6196482370AB6E007165C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +43,7 @@
 		2F6196672370ADEB007165C9 /* PointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointTests.swift; sourceTree = "<group>"; };
 		2F6196682370ADEB007165C9 /* QuadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadTests.swift; sourceTree = "<group>"; };
 		2F61966B2370AE5F007165C9 /* RectangleDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleDetector.swift; sourceTree = "<group>"; };
-		2F61966D2370AEC7007165C9 /* VideoOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoOutput.swift; sourceTree = "<group>"; };
+		2F61966D2370AEC7007165C9 /* CameraOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOutput.swift; sourceTree = "<group>"; };
 		2F61966F2370B039007165C9 /* RectangleDetecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetecting.swift; sourceTree = "<group>"; };
 		2F6196712370B46E007165C9 /* DetectorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectorFactory.swift; sourceTree = "<group>"; };
 		2F81BCF22383208300CCC605 /* RectangleDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetectorTests.swift; sourceTree = "<group>"; };
@@ -58,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F61965B2370AC92007165C9 /* KWFoundation.framework in Frameworks */,
+				2F64DDEB23F8292400A9B12C /* KWFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,17 +139,8 @@
 				2F6196712370B46E007165C9 /* DetectorFactory.swift */,
 				2F6196572370AC5D007165C9 /* Common */,
 				2F6196652370AD18007165C9 /* Detector */,
-				2F6196562370ABF3007165C9 /* Main */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		2F6196562370ABF3007165C9 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				2F61963B2370AB6E007165C9 /* NeuralService.h */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		2F6196572370AC5D007165C9 /* Common */ = {
@@ -182,7 +171,7 @@
 		2F6196652370AD18007165C9 /* Detector */ = {
 			isa = PBXGroup;
 			children = (
-				2F61966D2370AEC7007165C9 /* VideoOutput.swift */,
+				2F61966D2370AEC7007165C9 /* CameraOutput.swift */,
 				2F81BCF02383204800CCC605 /* RectangleDetector */,
 			);
 			path = Detector;
@@ -247,7 +236,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6196492370AB6E007165C9 /* NeuralService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F6196722370B46E007165C9 /* DetectorFactory.swift in Sources */,
-				2F61966E2370AEC8007165C9 /* VideoOutput.swift in Sources */,
+				2F61966E2370AEC8007165C9 /* CameraOutput.swift in Sources */,
 				2F61966C2370AE5F007165C9 /* RectangleDetector.swift in Sources */,
 				2F6196702370B039007165C9 /* RectangleDetecting.swift in Sources */,
 				2F6196642370ACFA007165C9 /* QuadExtension.swift in Sources */,
@@ -537,6 +525,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "NeuralService/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +552,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "NeuralService/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

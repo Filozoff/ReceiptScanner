@@ -6,9 +6,9 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
-import Foundation
+import KWFoundation
 
 public protocol RectangleDetecting {
 
-	func detect(from videoOutput: VideoOutput, completion: @escaping ValueClosure<Result<[Quad], Error>>)
+	func detect(from videoOutput: CameraOutput, completion: @escaping ValueClosure<Result<[Quad], Error>>)
 }

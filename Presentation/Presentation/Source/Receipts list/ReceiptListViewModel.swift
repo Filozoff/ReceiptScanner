@@ -6,6 +6,7 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
+import Foundation
 import Combine
 import KWFoundation
 
