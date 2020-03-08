@@ -1,6 +1,6 @@
 //
-//  Output.swift
-//  CameraService
+//  CameraOutput.swift
+//  Repository
 //
 //  Created by Kamil Wyszomierski on 20/02/2020.
 //  Copyright © 2020 Kamil Wyszomierski. All rights reserved.
@@ -9,7 +9,7 @@
 import CoreVideo
 import ImageIO
 
-public class Output {
+public class CameraOutput {
 
 	public let pixelBuffer: CVImageBuffer
 	public let orientation: CGImagePropertyOrientation

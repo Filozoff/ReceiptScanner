@@ -20,7 +20,7 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
 		return .portrait
 	}
-	
+
 	private var cancellables = [AnyCancellable]()
 	private var viewModel: ScannerViewModel
 	
@@ -45,6 +45,7 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 		super.viewDidLoad()
 		
 		backedView.takePictureButton.setTitle(viewModel.takePhotoButtonTitle, for: .normal)
+		backedView.videoPreview.displayOutput(from: AppComponents.shared.captureSession)
 
 		viewModel.$quads.sink { [weak self] quads in
 			self?.backedView.quadOverlayView.draw(quad: quads.first)
@@ -55,20 +56,12 @@ class ScannerViewController: UIViewController, BackedViewProvider {
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 
-		viewModel.observe()
-		let result = viewModel.setup()
-		switch result {
-		case .failure:
-			break
-
-		case .success(let session):
-			backedView.videoPreview.displayOutput(from: session)
-		}
+		viewModel.viewDidAppear()
 	}
-	
+
 	override func viewDidDisappear(_ animated: Bool) {
 		super.viewDidDisappear(animated)
-		
-		viewModel.stopObserving()
+
+		viewModel.viewDidDisappear()
 	}
 }

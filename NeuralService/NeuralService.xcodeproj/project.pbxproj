@@ -20,6 +20,7 @@
 		2F81BCF32383208300CCC605 /* RectangleDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81BCF22383208300CCC605 /* RectangleDetectorTests.swift */; };
 		2F81BCF52383249600CCC605 /* RectangleDetectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81BCF42383249600CCC605 /* RectangleDetectorError.swift */; };
 		2F81BCF823832BD100CCC605 /* Receipts.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F81BCF723832BD100CCC605 /* Receipts.xcassets */; };
+		2F81D1A224046749003E5EB3 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81D1A124046749003E5EB3 /* Repository.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2F81BCF22383208300CCC605 /* RectangleDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetectorTests.swift; sourceTree = "<group>"; };
 		2F81BCF42383249600CCC605 /* RectangleDetectorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetectorError.swift; sourceTree = "<group>"; };
 		2F81BCF723832BD100CCC605 /* Receipts.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Receipts.xcassets; sourceTree = "<group>"; };
+		2F81D1A124046749003E5EB3 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F81D1A224046749003E5EB3 /* Repository.framework in Frameworks */,
 				2F64DDEB23F8292400A9B12C /* KWFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +166,7 @@
 		2F6196592370AC92007165C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F81D1A124046749003E5EB3 /* Repository.framework */,
 				2F61965A2370AC92007165C9 /* KWFoundation.framework */,
 			);
 			name = Frameworks;

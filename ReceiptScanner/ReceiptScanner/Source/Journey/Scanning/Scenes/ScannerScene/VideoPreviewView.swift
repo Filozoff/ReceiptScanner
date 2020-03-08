@@ -24,7 +24,7 @@ class VideoPreviewView: UIView {
 		
 		return layer
 	}
-	
+
 	// MARK: - Display
 	
 	func displayOutput(from session: AVCaptureSession) {
