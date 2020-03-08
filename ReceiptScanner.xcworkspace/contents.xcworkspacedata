@@ -11,6 +11,12 @@
       location = "group:NeuralService/NeuralService.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Repository/Repository.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Domain/Domain.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Presentation/Presentation.xcodeproj">
    </FileRef>
    <FileRef

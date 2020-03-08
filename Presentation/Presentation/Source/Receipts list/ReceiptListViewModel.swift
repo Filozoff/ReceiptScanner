@@ -1,6 +1,6 @@
 //
 //  ReceiptListViewModel.swift
-//  ReceiptScanner
+//  CameraService
 //
 //  Created by Kamil Wyszomierski on 24/11/2019.
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.

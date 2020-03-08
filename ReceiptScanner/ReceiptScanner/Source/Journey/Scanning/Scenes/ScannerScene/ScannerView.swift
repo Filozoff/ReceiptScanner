@@ -6,7 +6,6 @@
 //  Copyright © 2019 Kamil Wyszomierski. All rights reserved.
 //
 
-import AVKit
 import UIKit
 
 class ScannerView: UIView {
@@ -21,8 +20,9 @@ class ScannerView: UIView {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		
+
 		backgroundColor = .black
+		clipsToBounds = true
 		addSubviewWithoutAutoresizingMask(videoPreview)
 		
 		addSubviewWithoutAutoresizingMask(quadOverlayView)

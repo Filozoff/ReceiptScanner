@@ -15,9 +15,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		guard let windowScene = scene as? UIWindowScene else { return }
+		let navigation = UINavigationController(rootViewController: NextViewController())
 		let startWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
 		startWindow.windowScene = windowScene
-		startWindow.rootViewController = ReceiptListViewController(viewModel: ReceiptListViewModel())
+		startWindow.rootViewController = navigation
 		startWindow.makeKeyAndVisible()
 		window = startWindow
 	}

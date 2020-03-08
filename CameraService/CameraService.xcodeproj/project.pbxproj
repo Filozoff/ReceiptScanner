@@ -10,9 +10,8 @@
 		2F79F4A623FF13BB00299D35 /* CameraService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F49C23FF13BB00299D35 /* CameraService.framework */; };
 		2F79F4C423FF160700299D35 /* CameraServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */; };
 		2F79F4C523FF160700299D35 /* CameraServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C223FF160700299D35 /* CameraServiceError.swift */; };
-		2F79F4C623FF160700299D35 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C323FF160700299D35 /* CameraService.swift */; };
 		2F79F4CA23FF164700299D35 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F4C823FF164700299D35 /* KWFoundation.framework */; };
-		2F79F4D623FF173E00299D35 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4D523FF173E00299D35 /* Output.swift */; };
+		2F81D19E2404673F003E5EB3 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81D19D2404673F003E5EB3 /* Repository.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +31,9 @@
 		2F79F4AC23FF13BB00299D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceImpl.swift; sourceTree = "<group>"; };
 		2F79F4C223FF160700299D35 /* CameraServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceError.swift; sourceTree = "<group>"; };
-		2F79F4C323FF160700299D35 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		2F79F4C823FF164700299D35 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F79F4C923FF164700299D35 /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F79F4D523FF173E00299D35 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
+		2F81D19D2404673F003E5EB3 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F81D19E2404673F003E5EB3 /* Repository.framework in Frameworks */,
 				2F79F4CA23FF164700299D35 /* KWFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,8 +120,6 @@
 		2F79F4BA23FF14DE00299D35 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				2F79F4D523FF173E00299D35 /* Output.swift */,
-				2F79F4C323FF160700299D35 /* CameraService.swift */,
 				2F79F4C223FF160700299D35 /* CameraServiceError.swift */,
 				2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */,
 			);
@@ -132,6 +129,7 @@
 		2F79F4C723FF164700299D35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F81D19D2404673F003E5EB3 /* Repository.framework */,
 				2F79F4C823FF164700299D35 /* KWFoundation.framework */,
 				2F79F4C923FF164700299D35 /* NeuralService.framework */,
 			);
@@ -156,6 +154,7 @@
 			buildConfigurationList = 2F79F4B023FF13BB00299D35 /* Build configuration list for PBXNativeTarget "CameraService" */;
 			buildPhases = (
 				2F79F49723FF13BB00299D35 /* Headers */,
+				2F81D16F24045166003E5EB3 /* Lint files */,
 				2F79F49823FF13BB00299D35 /* Sources */,
 				2F79F49923FF13BB00299D35 /* Frameworks */,
 				2F79F49A23FF13BB00299D35 /* Resources */,
@@ -242,15 +241,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F81D16F24045166003E5EB3 /* Lint files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Lint files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint --config \"../.swiftlint.yml\" \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F79F49823FF13BB00299D35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F79F4D623FF173E00299D35 /* Output.swift in Sources */,
 				2F79F4C423FF160700299D35 /* CameraServiceImpl.swift in Sources */,
 				2F79F4C523FF160700299D35 /* CameraServiceError.swift in Sources */,
-				2F79F4C623FF160700299D35 /* CameraService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

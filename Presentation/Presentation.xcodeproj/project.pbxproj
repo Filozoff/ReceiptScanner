@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F64DDEE23F8292D00A9B12C /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBD03572386FCC200EC64B8 /* KWFoundation.framework */; };
-		2F79F4D723FF1ED800299D35 /* CameraService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8C1A3523F8245800D6AF8A /* CameraService.framework */; };
-		2F79F4DA23FF1EDB00299D35 /* NeuralService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8C1A3623F8245800D6AF8A /* NeuralService.framework */; };
 		2F7C26312386F35400E37119 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7C26272386F35400E37119 /* Presentation.framework */; };
+		2F81D16624045053003E5EB3 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81D16524045053003E5EB3 /* Domain.framework */; };
 		2FBD03652386FD6300EC64B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03612386FD6300EC64B8 /* Localizable.strings */; };
 		2FBD03662386FD6300EC64B8 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD03622386FD6300EC64B8 /* Localizable.stringsdict */; };
 		2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBD03642386FD6300EC64B8 /* LocalizedString.swift */; };
@@ -34,6 +33,7 @@
 		2F7C262B2386F35400E37119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F7C26302386F35400E37119 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7C26372386F35400E37119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F81D16524045053003E5EB3 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8C1A3523F8245800D6AF8A /* CameraService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CameraService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8C1A3623F8245800D6AF8A /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBD03572386FCC200EC64B8 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,8 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F79F4D723FF1ED800299D35 /* CameraService.framework in Frameworks */,
-				2F79F4DA23FF1EDB00299D35 /* NeuralService.framework in Frameworks */,
+				2F81D16624045053003E5EB3 /* Domain.framework in Frameworks */,
 				2F64DDEE23F8292D00A9B12C /* KWFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +148,7 @@
 		2FBD03562386FCC200EC64B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F81D16524045053003E5EB3 /* Domain.framework */,
 				2F8C1A3523F8245800D6AF8A /* CameraService.framework */,
 				2F8C1A3623F8245800D6AF8A /* NeuralService.framework */,
 				2FBD03572386FCC200EC64B8 /* KWFoundation.framework */,
