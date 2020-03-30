@@ -21,3 +21,5 @@ struct AppComponents {
 	lazy var scannerRepository: ScannerRepository = ScannerRepositoryImpl(cameraService: cameraService)
 	lazy var scannerUseCase: ScannerUseCase = ScannerUseCaseImpl(scannerRepository: scannerRepository)
 }
+
+extension AVCaptureSession: CaptureSession { }
