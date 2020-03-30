@@ -16,13 +16,14 @@ public class CameraServiceImpl: NSObject, CameraService {
 
 	public let output = PassthroughSubject<CameraOutput, Never>()
 
+	private(set) var status = Status.notConfigured
+	
 	private let outputQueue = DispatchQueue(label: "camera.output")
-	private let session: AVCaptureSession
-	private var status = Status.notConfigured
+	private let session: CaptureSession
 
 	// MARK: - Initialization
 
-	public init(session: AVCaptureSession) {
+	public init(session: CaptureSession) {
 		self.session = session
 	}
 
