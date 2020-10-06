@@ -12,7 +12,8 @@ import XCTest
 class CameraServiceImplTests: XCTestCase {
 
 	private let captureSessionMock = CaptureSessionMock()
-	private lazy var sut = CameraServiceImpl(session: captureSessionMock)
+	private let captureDeviceFactoryMock = CaptureDeviceFactoryMock()
+	private lazy var sut = CameraServiceImpl(session: captureSessionMock, captureDeviceFactory: captureDeviceFactoryMock)
 
 	// MARK: - status
 

@@ -18,13 +18,15 @@ public class CameraServiceImpl: NSObject, CameraService {
 
 	private(set) var status = Status.notConfigured
 	
+	private let captureDeviceFactory: CaptureDeviceFactory
 	private let outputQueue = DispatchQueue(label: "camera.output")
 	private let session: CaptureSession
 
 	// MARK: - Initialization
 
-	public init(session: CaptureSession) {
+	public init(session: CaptureSession, captureDeviceFactory: CaptureDeviceFactory) {
 		self.session = session
+		self.captureDeviceFactory = captureDeviceFactory
 	}
 
 	// MARK: - Session
@@ -61,13 +63,13 @@ public class CameraServiceImpl: NSObject, CameraService {
 	}
 
 	private func addInput() throws {
-		guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) else {
+		guard let videoDevice = captureDeviceFactory.makeBuildInWideBackVideoDevice() else {
 			let error = CameraServiceError.cannotFindVideoDevice
 			status = .error(error)
 			throw error
 		}
 
-		let input = try AVCaptureDeviceInput(device: videoDevice)
+		let input = try captureDeviceFactory.makeCaptureDeviceInput(device: videoDevice)
 		let needsInput = session.inputs.isEmpty
 		guard needsInput else { return }
 
