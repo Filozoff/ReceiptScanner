@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6F81352432661F00CC6E4B /* CaptureDeviceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F81342432661F00CC6E4B /* CaptureDeviceFactory.swift */; };
+		2F6F81372432688E00CC6E4B /* CaptureDeviceFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F81362432688E00CC6E4B /* CaptureDeviceFactoryMock.swift */; };
+		2F6F813A243274DD00CC6E4B /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F8139243274DD00CC6E4B /* Swizzler.swift */; };
 		2F79F4A623FF13BB00299D35 /* CameraService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F49C23FF13BB00299D35 /* CameraService.framework */; };
 		2F79F4C423FF160700299D35 /* CameraServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */; };
 		2F79F4C523FF160700299D35 /* CameraServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79F4C223FF160700299D35 /* CameraServiceError.swift */; };
 		2F79F4CA23FF164700299D35 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F79F4C823FF164700299D35 /* KWFoundation.framework */; };
 		2F81D19E2404673F003E5EB3 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81D19D2404673F003E5EB3 /* Repository.framework */; };
+		2F8ACB6F2435226200EB76DA /* AVCaptureDeviceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8ACB6E2435226200EB76DA /* AVCaptureDeviceMock.swift */; };
+		2F8ACB71243523DD00EB76DA /* AVCaptureDeviceInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8ACB70243523DD00EB76DA /* AVCaptureDeviceInputMock.swift */; };
 		2F9DDDC424157453002D4BC6 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DDDC324157453002D4BC6 /* CaptureSession.swift */; };
 		2F9DDDCC24157788002D4BC6 /* CameraServiceImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DDDCB24157788002D4BC6 /* CameraServiceImplTests.swift */; };
 		2F9DDDCF241577C9002D4BC6 /* CaptureSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DDDCE241577C9002D4BC6 /* CaptureSessionMock.swift */; };
@@ -28,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F6F81342432661F00CC6E4B /* CaptureDeviceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDeviceFactory.swift; sourceTree = "<group>"; };
+		2F6F81362432688E00CC6E4B /* CaptureDeviceFactoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDeviceFactoryMock.swift; sourceTree = "<group>"; };
+		2F6F8139243274DD00CC6E4B /* Swizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzler.swift; sourceTree = "<group>"; };
 		2F79F49C23FF13BB00299D35 /* CameraService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CameraService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F79F4A023FF13BB00299D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F79F4A523FF13BB00299D35 /* CameraServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +45,8 @@
 		2F79F4C823FF164700299D35 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F79F4C923FF164700299D35 /* NeuralService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F81D19D2404673F003E5EB3 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8ACB6E2435226200EB76DA /* AVCaptureDeviceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureDeviceMock.swift; sourceTree = "<group>"; };
+		2F8ACB70243523DD00EB76DA /* AVCaptureDeviceInputMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureDeviceInputMock.swift; sourceTree = "<group>"; };
 		2F9DDDC324157453002D4BC6 /* CaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
 		2F9DDDCB24157788002D4BC6 /* CameraServiceImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceImplTests.swift; sourceTree = "<group>"; };
 		2F9DDDCE241577C9002D4BC6 /* CaptureSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSessionMock.swift; sourceTree = "<group>"; };
@@ -63,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F6F8138243274CE00CC6E4B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F8139243274DD00CC6E4B /* Swizzler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2F79F49223FF13BB00299D35 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +147,7 @@
 			children = (
 				2F79F4C223FF160700299D35 /* CameraServiceError.swift */,
 				2F79F4C123FF160700299D35 /* CameraServiceImpl.swift */,
+				2F6F81342432661F00CC6E4B /* CaptureDeviceFactory.swift */,
 				2F9DDDC324157453002D4BC6 /* CaptureSession.swift */,
 			);
 			path = Camera;
@@ -147,6 +166,7 @@
 		2F9DDDC72415770F002D4BC6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2F6F8138243274CE00CC6E4B /* Helpers */,
 				2F9DDDCD241577B5002D4BC6 /* Mocks */,
 				2F9DDDC824157726002D4BC6 /* Tests */,
 			);
@@ -172,6 +192,9 @@
 		2F9DDDCD241577B5002D4BC6 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				2F8ACB70243523DD00EB76DA /* AVCaptureDeviceInputMock.swift */,
+				2F8ACB6E2435226200EB76DA /* AVCaptureDeviceMock.swift */,
+				2F6F81362432688E00CC6E4B /* CaptureDeviceFactoryMock.swift */,
 				2F9DDDCE241577C9002D4BC6 /* CaptureSessionMock.swift */,
 			);
 			path = Mocks;
@@ -310,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F79F4C423FF160700299D35 /* CameraServiceImpl.swift in Sources */,
+				2F6F81352432661F00CC6E4B /* CaptureDeviceFactory.swift in Sources */,
 				2F79F4C523FF160700299D35 /* CameraServiceError.swift in Sources */,
 				2F9DDDC424157453002D4BC6 /* CaptureSession.swift in Sources */,
 			);
@@ -319,8 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8ACB71243523DD00EB76DA /* AVCaptureDeviceInputMock.swift in Sources */,
 				2F9DDDCC24157788002D4BC6 /* CameraServiceImplTests.swift in Sources */,
 				2F9DDDCF241577C9002D4BC6 /* CaptureSessionMock.swift in Sources */,
+				2F8ACB6F2435226200EB76DA /* AVCaptureDeviceMock.swift in Sources */,
+				2F6F81372432688E00CC6E4B /* CaptureDeviceFactoryMock.swift in Sources */,
+				2F6F813A243274DD00CC6E4B /* Swizzler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
