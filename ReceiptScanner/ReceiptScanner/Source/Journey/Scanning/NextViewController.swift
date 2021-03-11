@@ -26,11 +26,29 @@ class NextViewController: UIViewController {
 		scanButton.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(scanButton)
 
+		let receiptListButton = UIButton(type: .system)
+		receiptListButton.addTarget(self, action: #selector(didTouch(receiptListButton:)), for: .touchUpInside)
+		receiptListButton.setTitle("Receipts", for: .normal)
+		receiptListButton.translatesAutoresizingMaskIntoConstraints = false
+		view.addSubview(receiptListButton)
+
 		NSLayoutConstraint.activate([
 			scanButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			scanButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
 		])
+
+		NSLayoutConstraint.activate([
+			receiptListButton.topAnchor.constraint(equalTo: scanButton.bottomAnchor, constant: 20.0),
+			receiptListButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+		])
     }
+
+	@objc private func didTouch(receiptListButton: UIButton) {
+		let itemListViewController = ReceiptListViewController(
+			viewModel: ReceiptListViewModel()
+		)
+		navigationController?.pushViewController(itemListViewController, animated: true)
+	}
 
 	@objc private func didTouch(scanButton: UIButton) {
 		let scanViewController = ScannerViewController(
