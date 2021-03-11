@@ -25,27 +25,15 @@ class CaptureSessionMock: CaptureSession {
 		outputs.append(output)
 	}
 
-	func canAddInput(_ input: AVCaptureInput) -> Bool {
-		return true
-	}
+	func canAddInput(_ input: AVCaptureInput) -> Bool { true }
 
-	func canAddOutput(_ output: AVCaptureOutput) -> Bool {
-		return true
-	}
+	func canAddOutput(_ output: AVCaptureOutput) -> Bool { true }
 
-	func beginConfiguration() {
+	func beginConfiguration() { }
 
-	}
+	func commitConfiguration() { }
 
-	func commitConfiguration() {
+	func startRunning() { }
 
-	}
-
-	func startRunning() {
-
-	}
-
-	func stopRunning() {
-
-	}
+	func stopRunning() { }
 }
