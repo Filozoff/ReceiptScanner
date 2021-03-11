@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F7A2E502412D059008737FE /* ScannerRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A2E4F2412D059008737FE /* ScannerRepositoryImpl.swift */; };
+		2F7A2E502412D059008737FE /* ScannerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A2E4F2412D059008737FE /* ScannerRepository.swift */; };
 		2F7A2E532413E2BA008737FE /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7A2E522413E2BA008737FE /* KWFoundation.framework */; };
 		2F7A2E572413E2E7008737FE /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7A2E562413E2E7008737FE /* Domain.framework */; };
 		2F7A2E582413E2E7008737FE /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7A2E562413E2E7008737FE /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F7A2E5B2413E50D008737FE /* CameraOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A2E5A2413E50C008737FE /* CameraOutput.swift */; };
 		2F81D187240458A7003E5EB3 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81D17D240458A7003E5EB3 /* Repository.framework */; };
 		2F81D18C240458A7003E5EB3 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81D18B240458A7003E5EB3 /* RepositoryTests.swift */; };
-		2F81D19C240466F1003E5EB3 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81D19B240466F1003E5EB3 /* CameraService.swift */; };
+		2F81D19C240466F1003E5EB3 /* CameraServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81D19B240466F1003E5EB3 /* CameraServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F7A2E4F2412D059008737FE /* ScannerRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerRepositoryImpl.swift; sourceTree = "<group>"; };
+		2F7A2E4F2412D059008737FE /* ScannerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerRepository.swift; sourceTree = "<group>"; };
 		2F7A2E522413E2BA008737FE /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7A2E562413E2E7008737FE /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7A2E5A2413E50C008737FE /* CameraOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOutput.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		2F81D186240458A7003E5EB3 /* RepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F81D18B240458A7003E5EB3 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		2F81D18D240458A7003E5EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F81D19B240466F1003E5EB3 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		2F81D19B240466F1003E5EB3 /* CameraServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				2F7A2E5A2413E50C008737FE /* CameraOutput.swift */,
-				2F81D19B240466F1003E5EB3 /* CameraService.swift */,
+				2F81D19B240466F1003E5EB3 /* CameraServiceProtocol.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 		2F81D1A5240468FC003E5EB3 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
-				2F7A2E4F2412D059008737FE /* ScannerRepositoryImpl.swift */,
+				2F7A2E4F2412D059008737FE /* ScannerRepository.swift */,
 				2F7A2E5C2413E566008737FE /* Camera */,
 			);
 			path = Scanner;
@@ -302,9 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F7A2E502412D059008737FE /* ScannerRepositoryImpl.swift in Sources */,
+				2F7A2E502412D059008737FE /* ScannerRepository.swift in Sources */,
 				2F7A2E5B2413E50D008737FE /* CameraOutput.swift in Sources */,
-				2F81D19C240466F1003E5EB3 /* CameraService.swift in Sources */,
+				2F81D19C240466F1003E5EB3 /* CameraServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

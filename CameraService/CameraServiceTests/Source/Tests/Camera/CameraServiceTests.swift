@@ -1,5 +1,5 @@
 //
-//  CameraServiceImplTests.swift
+//  CameraServiceTests.swift
 //  CameraServiceTests
 //
 //  Created by Kamil Wyszomierski on 08/03/2020.
@@ -9,11 +9,11 @@
 import XCTest
 @testable import CameraService
 
-class CameraServiceImplTests: XCTestCase {
+class CameraServiceTests: XCTestCase {
 
 	private let captureSessionMock = CaptureSessionMock()
 	private let captureDeviceFactoryMock = CaptureDeviceFactoryMock()
-	private lazy var sut = CameraServiceImpl(session: captureSessionMock, captureDeviceFactory: captureDeviceFactoryMock)
+	private lazy var sut = CameraService(session: captureSessionMock, captureDeviceFactory: captureDeviceFactoryMock)
 
 	// MARK: - status
 

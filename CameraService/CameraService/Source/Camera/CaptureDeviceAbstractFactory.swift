@@ -8,13 +8,13 @@
 
 import AVKit
 
-public protocol CaptureDeviceFactory {
+public protocol CaptureDeviceAbstractFactory {
 
 	func makeBuildInWideBackVideoDevice() -> AVCaptureDevice?
 	func makeCaptureDeviceInput(device: AVCaptureDevice) throws -> AVCaptureDeviceInput
 }
 
-public struct CaptureDeviceFactoryImpl: CaptureDeviceFactory {
+public struct CaptureDeviceFactory: CaptureDeviceAbstractFactory {
 
 	public init() { }
 

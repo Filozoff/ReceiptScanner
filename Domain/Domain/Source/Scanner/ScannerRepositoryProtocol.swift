@@ -1,5 +1,5 @@
 //
-//  ScannerRepository.swift
+//  ScannerRepositoryProtocol.swift
 //  Domain
 //
 //  Created by Kamil Wyszomierski on 24/02/2020.
@@ -9,7 +9,7 @@
 import Foundation
 import KWFoundation
 
-public protocol ScannerRepository {
+public protocol ScannerRepositoryProtocol {
 
 	func startObservation(completion: ValueClosure<Result<[Quad], Error>>)
 	func stopObservation()

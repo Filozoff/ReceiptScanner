@@ -1,5 +1,5 @@
 //
-//  CameraServiceImpl.swift
+//  CameraService.swift
 //  CameraService
 //
 //  Created by Kamil Wyszomierski on 23/10/2019.
@@ -10,7 +10,7 @@ import AVKit
 import Combine
 import Repository
 
-public class CameraServiceImpl: NSObject, CameraService {
+public class CameraService: NSObject, CameraServiceProtocol {
 
 	// MARK: - Properties
 
@@ -18,13 +18,13 @@ public class CameraServiceImpl: NSObject, CameraService {
 
 	private(set) var status = Status.notConfigured
 	
-	private let captureDeviceFactory: CaptureDeviceFactory
+	private let captureDeviceFactory: CaptureDeviceAbstractFactory
 	private let outputQueue = DispatchQueue(label: "camera.output")
 	private let session: CaptureSession
 
 	// MARK: - Initialization
 
-	public init(session: CaptureSession, captureDeviceFactory: CaptureDeviceFactory) {
+	public init(session: CaptureSession, captureDeviceFactory: CaptureDeviceAbstractFactory) {
 		self.session = session
 		self.captureDeviceFactory = captureDeviceFactory
 	}
@@ -85,7 +85,7 @@ public class CameraServiceImpl: NSObject, CameraService {
 
 // MARK: - AVCaptureVideoDataOutputSampleBufferDelegate
 
-extension CameraServiceImpl: AVCaptureVideoDataOutputSampleBufferDelegate {
+extension CameraService: AVCaptureVideoDataOutputSampleBufferDelegate {
 
 	public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
 		guard
@@ -105,7 +105,7 @@ extension CameraServiceImpl: AVCaptureVideoDataOutputSampleBufferDelegate {
 
 // MARK: - Status
 
-extension CameraServiceImpl {
+extension CameraService {
 
 	enum Status {
 		case error(Error)
@@ -115,9 +115,9 @@ extension CameraServiceImpl {
 	}
 }
 
-extension CameraServiceImpl.Status: Equatable {
+extension CameraService.Status: Equatable {
 
-	static func == (lhs: CameraServiceImpl.Status, rhs: CameraServiceImpl.Status) -> Bool {
+	static func == (lhs: CameraService.Status, rhs: CameraService.Status) -> Bool {
 		switch (lhs, rhs) {
 		case (.error, .error),
 			 (.notConfigured, .notConfigured),

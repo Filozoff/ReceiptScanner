@@ -18,9 +18,9 @@ public class ScannerViewModel {
 	public let takePhotoButtonTitle = ""
 
 	private var cancellables = [AnyCancellable]()
-	private let scannerUseCase: ScannerUseCase
+	private let scannerUseCase: ScannerUseCaseProtocol
 	
-	public init(scannerUseCase: ScannerUseCase) {
+	public init(scannerUseCase: ScannerUseCaseProtocol) {
 		self.scannerUseCase = scannerUseCase
 	}
 

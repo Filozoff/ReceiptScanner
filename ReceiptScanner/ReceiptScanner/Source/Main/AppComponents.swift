@@ -16,14 +16,14 @@ struct AppComponents {
 
 	static var shared = AppComponents()
 
-	lazy var cameraService: CameraService = CameraServiceImpl(
+	lazy var cameraService: CameraServiceProtocol = CameraService(
 		session: captureSession,
-		captureDeviceFactory: CaptureDeviceFactoryImpl()
+		captureDeviceFactory: CaptureDeviceFactory()
 	)
 	
 	lazy var captureSession = AVCaptureSession()
-	lazy var scannerRepository: ScannerRepository = ScannerRepositoryImpl(cameraService: cameraService)
-	lazy var scannerUseCase: ScannerUseCase = ScannerUseCaseImpl(scannerRepository: scannerRepository)
+	lazy var scannerRepository: ScannerRepositoryProtocol = ScannerRepository(cameraService: cameraService)
+	lazy var scannerUseCase: ScannerUseCaseProtocol = ScannerUseCase(scannerRepository: scannerRepository)
 }
 
 extension AVCaptureSession: CaptureSession { }

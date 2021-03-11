@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		2F81D14924044EB5003E5EB3 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81D13F24044EB5003E5EB3 /* Domain.framework */; };
 		2F81D14E24044EB5003E5EB3 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81D14D24044EB5003E5EB3 /* DomainTests.swift */; };
-		2F81D15F24044F52003E5EB3 /* ScannerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81D15E24044F52003E5EB3 /* ScannerUseCase.swift */; };
+		2F81D15F24044F52003E5EB3 /* ScannerUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81D15E24044F52003E5EB3 /* ScannerUseCaseProtocol.swift */; };
 		2F81D16224045022003E5EB3 /* KWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81D16124045022003E5EB3 /* KWFoundation.framework */; };
-		2F81D1A924046943003E5EB3 /* ScannerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81D1A824046943003E5EB3 /* ScannerRepository.swift */; };
+		2F81D1A924046943003E5EB3 /* ScannerRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81D1A824046943003E5EB3 /* ScannerRepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +30,9 @@
 		2F81D14824044EB5003E5EB3 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F81D14D24044EB5003E5EB3 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		2F81D14F24044EB5003E5EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F81D15E24044F52003E5EB3 /* ScannerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerUseCase.swift; sourceTree = "<group>"; };
+		2F81D15E24044F52003E5EB3 /* ScannerUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerUseCaseProtocol.swift; sourceTree = "<group>"; };
 		2F81D16124045022003E5EB3 /* KWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F81D1A824046943003E5EB3 /* ScannerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerRepository.swift; sourceTree = "<group>"; };
+		2F81D1A824046943003E5EB3 /* ScannerRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +127,8 @@
 		2F81D15D24044F30003E5EB3 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
-				2F81D1A824046943003E5EB3 /* ScannerRepository.swift */,
-				2F81D15E24044F52003E5EB3 /* ScannerUseCase.swift */,
+				2F81D1A824046943003E5EB3 /* ScannerRepositoryProtocol.swift */,
+				2F81D15E24044F52003E5EB3 /* ScannerUseCaseProtocol.swift */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -272,8 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F81D1A924046943003E5EB3 /* ScannerRepository.swift in Sources */,
-				2F81D15F24044F52003E5EB3 /* ScannerUseCase.swift in Sources */,
+				2F81D1A924046943003E5EB3 /* ScannerRepositoryProtocol.swift in Sources */,
+				2F81D15F24044F52003E5EB3 /* ScannerUseCaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

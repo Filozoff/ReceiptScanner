@@ -9,17 +9,17 @@
 import Combine
 import KWFoundation
 
-public protocol ScannerUseCase {
+public protocol ScannerUseCaseProtocol {
 
 	func execute(completion: @escaping ValueClosure<Result<[Quad], Error>>)
 	func stopObservation()
 }
 
-public struct ScannerUseCaseImpl: ScannerUseCase {
+public struct ScannerUseCase: ScannerUseCaseProtocol {
 
-	let scannerRepository: ScannerRepository
+	let scannerRepository: ScannerRepositoryProtocol
 
-	public init(scannerRepository: ScannerRepository) {
+	public init(scannerRepository: ScannerRepositoryProtocol) {
 		self.scannerRepository = scannerRepository
 	}
 	

@@ -1,5 +1,5 @@
 //
-//  CameraService.swift
+//  CameraServiceProtocol.swift
 //  Repository
 //
 //  Created by Kamil Wyszomierski on 19/10/2019.
@@ -8,7 +8,7 @@
 
 import Combine
 
-public protocol CameraService {
+public protocol CameraServiceProtocol {
 	
 	var output: PassthroughSubject<CameraOutput, Never> { get }
 

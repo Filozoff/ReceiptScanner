@@ -1,5 +1,5 @@
 //
-//  ScannerRepositoryImpl.swift
+//  ScannerRepository.swift
 //  Repository
 //
 //  Created by Kamil Wyszomierski on 06/03/2020.
@@ -11,18 +11,18 @@ import Combine
 import Domain
 import KWFoundation
 
-public class ScannerRepositoryImpl {
+public class ScannerRepository {
 
-	let cameraService: CameraService
+	let cameraService: CameraServiceProtocol
 
 	private var cancellables = [AnyCancellable]()
 
-	public init(cameraService: CameraService) {
+	public init(cameraService: CameraServiceProtocol) {
 		self.cameraService = cameraService
 	}
 }
 
-extension ScannerRepositoryImpl: ScannerRepository {
+extension ScannerRepository: ScannerRepositoryProtocol {
 
 	public func startObservation(completion: ValueClosure<Result<[Quad], Error>>) {
 
