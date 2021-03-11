@@ -111,6 +111,21 @@ struct ReceiptListViewControllerPreview: PreviewProvider {
 				dateText: "12-02-2020",
 				receiptNameText: "Dinner",
 				shopNameText: "Nice Bistro"
+			),
+			ReceiptCellViewModel(
+				dateText: "10-02-2020",
+				receiptNameText: "Lunch",
+				shopNameText: "Matchfit"
+			),
+			ReceiptCellViewModel(
+				dateText: "01-02-2020",
+				receiptNameText: "Donuuuuuuuts!!!",
+				shopNameText: "Local sweets shop"
+			),
+			ReceiptCellViewModel(
+				dateText: "10-01-2020",
+				receiptNameText: "Mouse",
+				shopNameText: "MediaMarkt"
 			)
 		]
 

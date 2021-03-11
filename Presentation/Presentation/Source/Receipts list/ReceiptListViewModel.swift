@@ -30,7 +30,7 @@ public class ReceiptListViewModel {
 extension ReceiptListViewModel {
 
 	private static func makeCellViewModels() -> [ReceiptCellViewModel] {
-		return [
+		[
 			ReceiptCellViewModel(
 				dateText: "12-02-2020",
 				receiptNameText: "AGD receipt",
@@ -42,14 +42,29 @@ extension ReceiptListViewModel {
 				shopNameText: "Auchan"
 			),
 			ReceiptCellViewModel(
-				dateText: "11-02-2020",
+				dateText: "12-02-2020",
 				receiptNameText: "Weekly shopping:\n - bean\n - apples\n - oranges\n - chocolates\n - ham\n - kielbasa\n - pierogi\n - cashews",
 				shopNameText: "Lidl"
 			),
 			ReceiptCellViewModel(
-				dateText: "10-02-2020",
+				dateText: "12-02-2020",
 				receiptNameText: "Dinner",
 				shopNameText: "Nice Bistro"
+			),
+			ReceiptCellViewModel(
+				dateText: "10-02-2020",
+				receiptNameText: "Lunch",
+				shopNameText: "Matchfit"
+			),
+			ReceiptCellViewModel(
+				dateText: "01-02-2020",
+				receiptNameText: "Donuuuuuuuts!!!",
+				shopNameText: "Local sweets shop"
+			),
+			ReceiptCellViewModel(
+				dateText: "10-01-2020",
+				receiptNameText: "Mouse",
+				shopNameText: "MediaMarkt"
 			)
 		]
 	}
