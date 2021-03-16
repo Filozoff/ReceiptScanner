@@ -1,7 +1,7 @@
 env:
-    - PLATFORM="iOS Simulator,OS=13.2.2,name=iPhone 11"
+    - PLATFORM="iOS Simulator,OS=14.4,name=iPhone 12"
 language: objective-c
-osx_image: xcode11.2
+osx_image: xcode12.4
 before_script:
     - set -o pipefail && brew install swiftlint
     - set -o pipefail && brew install swiftgen
