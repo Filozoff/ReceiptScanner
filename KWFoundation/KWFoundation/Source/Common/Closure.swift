@@ -9,4 +9,5 @@
 import Foundation
 
 public typealias EmptyClosure = () -> Void
-public typealias ValueClosure<T> = (_ value: T) -> Void
+public typealias ValueClosure<T> = ValueReturnClosure<T, Void>
+public typealias ValueReturnClosure<T, R> = (_ value: T) -> R
