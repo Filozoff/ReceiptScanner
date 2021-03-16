@@ -9,7 +9,7 @@
 import Foundation
 import KWFoundation
 
-public struct KeyInputPolicy {
+struct KeyInputPolicy {
 
 	let predicate: ValueReturnClosure<String, Bool>
 
