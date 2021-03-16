@@ -16,6 +16,9 @@
 		2FCE5C74239EDBCE008E2984 /* ReceiptCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C73239EDBCE008E2984 /* ReceiptCellViewModel.swift */; };
 		2FCE5C7A239EDC9E008E2984 /* ReceiptListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5C79239EDC9E008E2984 /* ReceiptListViewModel.swift */; };
 		2FE37B8823F499420002BE6D /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE37B8723F499420002BE6D /* ScannerViewModel.swift */; };
+		2FFBDABF260131E9005D0F47 /* KeyInputPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBDABE260131E9005D0F47 /* KeyInputPolicy.swift */; };
+		2FFBDAC526013341005D0F47 /* KeyInputPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBDAC426013341005D0F47 /* KeyInputPolicyTests.swift */; };
+		2FFBDACA260136B7005D0F47 /* StringStubFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBDAC9260136B7005D0F47 /* StringStubFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		2FCE5C73239EDBCE008E2984 /* ReceiptCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptCellViewModel.swift; sourceTree = "<group>"; };
 		2FCE5C79239EDC9E008E2984 /* ReceiptListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptListViewModel.swift; sourceTree = "<group>"; };
 		2FE37B8723F499420002BE6D /* ScannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		2FFBDABE260131E9005D0F47 /* KeyInputPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputPolicy.swift; sourceTree = "<group>"; };
+		2FFBDAC426013341005D0F47 /* KeyInputPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputPolicyTests.swift; sourceTree = "<group>"; };
+		2FFBDAC9260136B7005D0F47 /* StringStubFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringStubFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,9 @@
 		2F7C26412386F37700E37119 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2FE37B8923F4997E0002BE6D /* Scanning */,
+				2FFBDAB826013192005D0F47 /* Components */,
 				2FCE5C72239EDBA0008E2984 /* Receipts list */,
+				2FE37B8923F4997E0002BE6D /* Scanning */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -133,6 +140,7 @@
 		2F7C26452386F40500E37119 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2FFBDAC826013690005D0F47 /* Mocks */,
 				2F7C26462386F40A00E37119 /* Tests */,
 			);
 			path = Source;
@@ -141,6 +149,7 @@
 		2F7C26462386F40A00E37119 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2FFBDAC426013341005D0F47 /* KeyInputPolicyTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -196,6 +205,22 @@
 				2FE37B8723F499420002BE6D /* ScannerViewModel.swift */,
 			);
 			path = Scanning;
+			sourceTree = "<group>";
+		};
+		2FFBDAB826013192005D0F47 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2FFBDABE260131E9005D0F47 /* KeyInputPolicy.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2FFBDAC826013690005D0F47 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2FFBDAC9260136B7005D0F47 /* StringStubFactory.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFBDABF260131E9005D0F47 /* KeyInputPolicy.swift in Sources */,
 				2FCE5C7A239EDC9E008E2984 /* ReceiptListViewModel.swift in Sources */,
 				2FBD03672386FD6300EC64B8 /* LocalizedString.swift in Sources */,
 				2FCE5C74239EDBCE008E2984 /* ReceiptCellViewModel.swift in Sources */,
@@ -360,6 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFBDAC526013341005D0F47 /* KeyInputPolicyTests.swift in Sources */,
+				2FFBDACA260136B7005D0F47 /* StringStubFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
