@@ -46,10 +46,31 @@
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F42D9CF235649B5005058EC"
-            BuildableName = "ReceiptScanner.app"
-            BlueprintName = "ReceiptScanner"
-            ReferencedContainer = "container:ReceiptScanner.xcodeproj">
+            BlueprintIdentifier = "2F7C26262386F35400E37119"
+            BuildableName = "Presentation.framework"
+            BlueprintName = "Presentation"
+            ReferencedContainer = "container:../Presentation/Presentation.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2F81D13E24044EB5003E5EB3"
+            BuildableName = "Domain.framework"
+            BlueprintName = "Domain"
+            ReferencedContainer = "container:../Domain/Domain.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2F81D17C240458A7003E5EB3"
+            BuildableName = "Repository.framework"
+            BlueprintName = "Repository"
+            ReferencedContainer = "container:../Repository/Repository.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2F79F49B23FF13BB00299D35"
+            BuildableName = "CameraService.framework"
+            BlueprintName = "CameraService"
+            ReferencedContainer = "container:../CameraService/CameraService.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -81,6 +102,36 @@
                BuildableName = "KWFoundationTests.xctest"
                BlueprintName = "KWFoundationTests"
                ReferencedContainer = "container:../KWFoundation/KWFoundation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F7C262F2386F35400E37119"
+               BuildableName = "PresentationTests.xctest"
+               BlueprintName = "PresentationTests"
+               ReferencedContainer = "container:../Presentation/Presentation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F81D14724044EB5003E5EB3"
+               BuildableName = "DomainTests.xctest"
+               BlueprintName = "DomainTests"
+               ReferencedContainer = "container:../Domain/Domain.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F81D185240458A7003E5EB3"
+               BuildableName = "RepositoryTests.xctest"
+               BlueprintName = "RepositoryTests"
+               ReferencedContainer = "container:../Repository/Repository.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
